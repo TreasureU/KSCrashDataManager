@@ -1,0 +1,943 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5F2D385A1CD845880015D7CB /* NSDate+HAndM.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2D38591CD845880015D7CB /* NSDate+HAndM.m */; };
+		5F2D38641CD8A8890015D7CB /* NSTimer+Weak.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2D38631CD8A8890015D7CB /* NSTimer+Weak.m */; };
+		5F2D38811CD9C22E0015D7CB /* NSString+filter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2D38801CD9C22E0015D7CB /* NSString+filter.m */; };
+		5F2FA7BC1D86673A00B95313 /* CJFWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2FA7BA1D86673A00B95313 /* CJFWindowController.m */; };
+		5F2FA7BD1D86673A00B95313 /* CJFWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F2FA7BB1D86673A00B95313 /* CJFWindowController.xib */; };
+		5F2FA7C01D868C5C00B95313 /* CJFWindowManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2FA7BF1D868C5C00B95313 /* CJFWindowManager.m */; };
+		5F2FA7CF1D870E0B00B95313 /* CJFNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2FA7CE1D870E0B00B95313 /* CJFNetworkManager.m */; };
+		5F2FA7DE1D879E3E00B95313 /* TimedTaskController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2FA7D81D879E3E00B95313 /* TimedTaskController.m */; };
+		5F2FA7DF1D879E3E00B95313 /* CJFQueueManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2FA7DB1D879E3E00B95313 /* CJFQueueManager.m */; };
+		5F2FA7E01D879E3E00B95313 /* CJFTimerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2FA7DD1D879E3E00B95313 /* CJFTimerManager.m */; };
+		5F2FA7E41D879ECB00B95313 /* CrashTimedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2FA7E31D879ECB00B95313 /* CrashTimedModel.m */; };
+		5F2FA7E71D87A88E00B95313 /* CrashTaskManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2FA7E61D87A88E00B95313 /* CrashTaskManager.m */; };
+		5F2FA7EA1D87A8A600B95313 /* CrashTaskDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2FA7E91D87A8A600B95313 /* CrashTaskDataManager.m */; };
+		5F2FA7ED1D87D8B100B95313 /* TimedTaskTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F2FA7EC1D87D8B100B95313 /* TimedTaskTableViewController.m */; };
+		5F4099741D3340F800B8FF0B /* StatisticsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F4099701D3340F800B8FF0B /* StatisticsViewController.m */; };
+		5F4099751D3340F800B8FF0B /* TranslateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F4099731D3340F800B8FF0B /* TranslateViewController.m */; };
+		5F44597C1DE5762B000CE5D3 /* CJFScriptExecuteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F44597B1DE5762B000CE5D3 /* CJFScriptExecuteManager.m */; };
+		5F64E1001E28740600A1B298 /* JDiOSRepetitionReportCheck.py in Resources */ = {isa = PBXBuildFile; fileRef = 5F64E0FE1E28740600A1B298 /* JDiOSRepetitionReportCheck.py */; };
+		5F64E1011E28740600A1B298 /* JDiOSUUIDDayToDay.py in Resources */ = {isa = PBXBuildFile; fileRef = 5F64E0FF1E28740600A1B298 /* JDiOSUUIDDayToDay.py */; };
+		5F64E10A1E2880AF00A1B298 /* __init__.py in Resources */ = {isa = PBXBuildFile; fileRef = 5F64E1031E2880AF00A1B298 /* __init__.py */; };
+		5F64E10B1E2880AF00A1B298 /* baseEx.py in Resources */ = {isa = PBXBuildFile; fileRef = 5F64E1041E2880AF00A1B298 /* baseEx.py */; };
+		5F64E10C1E2880AF00A1B298 /* cmdEx.py in Resources */ = {isa = PBXBuildFile; fileRef = 5F64E1051E2880AF00A1B298 /* cmdEx.py */; };
+		5F64E10D1E2880AF00A1B298 /* computeEx.py in Resources */ = {isa = PBXBuildFile; fileRef = 5F64E1061E2880AF00A1B298 /* computeEx.py */; };
+		5F64E10E1E2880AF00A1B298 /* crashSortModel.py in Resources */ = {isa = PBXBuildFile; fileRef = 5F64E1071E2880AF00A1B298 /* crashSortModel.py */; };
+		5F64E10F1E2880AF00A1B298 /* fileEx.py in Resources */ = {isa = PBXBuildFile; fileRef = 5F64E1081E2880AF00A1B298 /* fileEx.py */; };
+		5F64E1101E2880AF00A1B298 /* timeEx.py in Resources */ = {isa = PBXBuildFile; fileRef = 5F64E1091E2880AF00A1B298 /* timeEx.py */; };
+		5F7CA94B1D40CC9C004B1744 /* JDGzip.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F7CA94A1D40CC9C004B1744 /* JDGzip.m */; };
+		5F7CA94D1D40D2A7004B1744 /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F7CA94C1D40D2A7004B1744 /* libz.1.2.5.tbd */; };
+		5F8968041CD332950012CE1E /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F8968031CD332950012CE1E /* Tools.m */; };
+		5F89680A1CD333E30012CE1E /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F8968061CD333E30012CE1E /* Base64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5F89680B1CD333E30012CE1E /* Des.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F8968091CD333E30012CE1E /* Des.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5F89906A1DE3E86E007E73D1 /* CJFInitManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F8990691DE3E86E007E73D1 /* CJFInitManager.m */; };
+		5F89906E1DE3FE86007E73D1 /* CJFPopoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F89906D1DE3FE86007E73D1 /* CJFPopoverViewController.m */; };
+		5F8A518D1DF68865002542B1 /* CrashAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F8A518C1DF68865002542B1 /* CrashAccountViewController.m */; };
+		5FA1D6CD1DDC0C5400CB3F6C /* JDiOSOOMClassify.py in Resources */ = {isa = PBXBuildFile; fileRef = 5FA1D6A71DDC0C5400CB3F6C /* JDiOSOOMClassify.py */; };
+		5FA1D6CE1DDC0C5400CB3F6C /* JDiPadAllCrashClassify.py in Resources */ = {isa = PBXBuildFile; fileRef = 5FA1D6A81DDC0C5400CB3F6C /* JDiPadAllCrashClassify.py */; };
+		5FA1D6CF1DDC0C5400CB3F6C /* JDiPadAllCrashConvert.py in Resources */ = {isa = PBXBuildFile; fileRef = 5FA1D6A91DDC0C5400CB3F6C /* JDiPadAllCrashConvert.py */; };
+		5FA1D6D01DDC0C5400CB3F6C /* JDiPadAllCrashParser.py in Resources */ = {isa = PBXBuildFile; fileRef = 5FA1D6AA1DDC0C5400CB3F6C /* JDiPadAllCrashParser.py */; };
+		5FA1D6D11DDC0C5400CB3F6C /* JDiPadOneCrashLogParse.py in Resources */ = {isa = PBXBuildFile; fileRef = 5FA1D6AB1DDC0C5400CB3F6C /* JDiPadOneCrashLogParse.py */; };
+		5FA1D6D51DDC0C5400CB3F6C /* systemCache in Resources */ = {isa = PBXBuildFile; fileRef = 5FA1D6B01DDC0C5400CB3F6C /* systemCache */; };
+		5FA1D6E21DDC0C5400CB3F6C /* JDiOSAllCrashConvertMutilProcess.py in Resources */ = {isa = PBXBuildFile; fileRef = 5FA1D6BE1DDC0C5400CB3F6C /* JDiOSAllCrashConvertMutilProcess.py */; };
+		5FA1D6E31DDC0C5400CB3F6C /* JDiOSCrashSortOutFinal.py in Resources */ = {isa = PBXBuildFile; fileRef = 5FA1D6BF1DDC0C5400CB3F6C /* JDiOSCrashSortOutFinal.py */; };
+		5FA1D6E41DDC0C5400CB3F6C /* JDiOSCrashSortOutInit.py in Resources */ = {isa = PBXBuildFile; fileRef = 5FA1D6C01DDC0C5400CB3F6C /* JDiOSCrashSortOutInit.py */; };
+		5FA1D6E51DDC0C5400CB3F6C /* JDiOSCrashSortOutRecursion.py in Resources */ = {isa = PBXBuildFile; fileRef = 5FA1D6C11DDC0C5400CB3F6C /* JDiOSCrashSortOutRecursion.py */; };
+		5FA1D6E61DDC0C5400CB3F6C /* JDiOSExcelFromDir.py in Resources */ = {isa = PBXBuildFile; fileRef = 5FA1D6C21DDC0C5400CB3F6C /* JDiOSExcelFromDir.py */; };
+		5FA1D6E71DDC0C5400CB3F6C /* JDiOSNAV_URLSort.py in Resources */ = {isa = PBXBuildFile; fileRef = 5FA1D6C31DDC0C5400CB3F6C /* JDiOSNAV_URLSort.py */; };
+		5FA1D6E81DDC0C5400CB3F6C /* JDiOSOOMFilter.py in Resources */ = {isa = PBXBuildFile; fileRef = 5FA1D6C41DDC0C5400CB3F6C /* JDiOSOOMFilter.py */; };
+		5FA1D6E91DDC0C5400CB3F6C /* filterKeyWordMappingiPad.json in Resources */ = {isa = PBXBuildFile; fileRef = 5FA1D6C61DDC0C5400CB3F6C /* filterKeyWordMappingiPad.json */; };
+		5FA1D6EA1DDC0C5400CB3F6C /* filterKeyWordMappingiPhone.json in Resources */ = {isa = PBXBuildFile; fileRef = 5FA1D6C71DDC0C5400CB3F6C /* filterKeyWordMappingiPhone.json */; };
+		5FA1D6EB1DDC0C5400CB3F6C /* NavAndUrlSortiPad.json in Resources */ = {isa = PBXBuildFile; fileRef = 5FA1D6C81DDC0C5400CB3F6C /* NavAndUrlSortiPad.json */; };
+		5FA1D6EC1DDC0C5400CB3F6C /* NavAndUrlSortiPhone.json in Resources */ = {isa = PBXBuildFile; fileRef = 5FA1D6C91DDC0C5400CB3F6C /* NavAndUrlSortiPhone.json */; };
+		5FA1D6ED1DDC0C5400CB3F6C /* systemKeyWordMappingiPad.json in Resources */ = {isa = PBXBuildFile; fileRef = 5FA1D6CA1DDC0C5400CB3F6C /* systemKeyWordMappingiPad.json */; };
+		5FA1D6EE1DDC0C5400CB3F6C /* systemKeyWordMappingiPhone.json in Resources */ = {isa = PBXBuildFile; fileRef = 5FA1D6CB1DDC0C5400CB3F6C /* systemKeyWordMappingiPhone.json */; };
+		5FD16C081D2FD60700D96295 /* CrashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD16C061D2FD60700D96295 /* CrashViewController.m */; };
+		5FD16C0B1D2FD78B00D96295 /* ClassifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD16C0A1D2FD78B00D96295 /* ClassifyViewController.m */; };
+		5FD16C0E1D2FD7D100D96295 /* ParserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD16C0D1D2FD7D100D96295 /* ParserViewController.m */; };
+		5FE6D98E1E0BA834006665B5 /* JDDataContentFilter.py in Resources */ = {isa = PBXBuildFile; fileRef = 5FE6D98B1E0BA834006665B5 /* JDDataContentFilter.py */; };
+		5FE6D98F1E0BA834006665B5 /* JDiOSInvalidCrashExtract.py in Resources */ = {isa = PBXBuildFile; fileRef = 5FE6D98C1E0BA834006665B5 /* JDiOSInvalidCrashExtract.py */; };
+		5FE6D9901E0BA834006665B5 /* JDiOSUniqUUID.py in Resources */ = {isa = PBXBuildFile; fileRef = 5FE6D98D1E0BA834006665B5 /* JDiOSUniqUUID.py */; };
+		5FEAFDF61CD1EEBE00516E15 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FEAFDF51CD1EEBE00516E15 /* AppDelegate.m */; };
+		5FEAFDF91CD1EEBE00516E15 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FEAFDF81CD1EEBE00516E15 /* main.m */; };
+		5FEAFDFC1CD1EEBE00516E15 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FEAFDFB1CD1EEBE00516E15 /* ViewController.m */; };
+		5FEAFDFE1CD1EEBE00516E15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FEAFDFD1CD1EEBE00516E15 /* Assets.xcassets */; };
+		5FEAFE011CD1EEBE00516E15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FEAFDFF1CD1EEBE00516E15 /* Main.storyboard */; };
+		5FFDAD8C1DAC8C350038786D /* NavUrlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FFDAD8A1DAC8C350038786D /* NavUrlViewController.m */; };
+		5FFDAD8F1DAC8C430038786D /* QuickCountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FFDAD8D1DAC8C430038786D /* QuickCountViewController.m */; };
+		5FFDAD921DAC8C4B0038786D /* ExcelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FFDAD901DAC8C4B0038786D /* ExcelViewController.m */; };
+		5FFE66A11DE7ED9000984DD2 /* GetRemoteCrashDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FFE66A01DE7ED9000984DD2 /* GetRemoteCrashDataManager.m */; };
+		5FFE66A41DEA704300984DD2 /* CJFCrashDataReadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FFE66A31DEA704300984DD2 /* CJFCrashDataReadManager.m */; };
+		5FFE66A81DEBDDEB00984DD2 /* LocalCrashShortCutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FFE66A71DEBDDEB00984DD2 /* LocalCrashShortCutViewController.m */; };
+		5FFE66AC1DEC199C00984DD2 /* QuicklyImportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FFE66AB1DEC199C00984DD2 /* QuicklyImportViewController.m */; };
+		5FFFA9951D741798009C6497 /* NSData+Sperate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FFFA9941D741798009C6497 /* NSData+Sperate.m */; };
+		5FFFA9981D7419F4009C6497 /* CJFFileReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FFFA9971D7419F4009C6497 /* CJFFileReader.m */; };
+		92FEB968AA3F2105F7778CE0 /* libPods-CJFWorkKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D97BE13E65ED21C75BAFF822 /* libPods-CJFWorkKit.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		10B0C5623B934AABBF248790 /* Pods-CJFWorkKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CJFWorkKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-CJFWorkKit/Pods-CJFWorkKit.release.xcconfig"; sourceTree = "<group>"; };
+		5F2D38581CD845880015D7CB /* NSDate+HAndM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+HAndM.h"; sourceTree = "<group>"; };
+		5F2D38591CD845880015D7CB /* NSDate+HAndM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+HAndM.m"; sourceTree = "<group>"; };
+		5F2D385B1CD846470015D7CB /* configManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = configManager.h; sourceTree = "<group>"; };
+		5F2D38621CD8A8890015D7CB /* NSTimer+Weak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSTimer+Weak.h"; sourceTree = "<group>"; };
+		5F2D38631CD8A8890015D7CB /* NSTimer+Weak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+Weak.m"; sourceTree = "<group>"; };
+		5F2D387F1CD9C22E0015D7CB /* NSString+filter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+filter.h"; sourceTree = "<group>"; };
+		5F2D38801CD9C22E0015D7CB /* NSString+filter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+filter.m"; sourceTree = "<group>"; };
+		5F2FA7B91D86673A00B95313 /* CJFWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJFWindowController.h; sourceTree = "<group>"; };
+		5F2FA7BA1D86673A00B95313 /* CJFWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJFWindowController.m; sourceTree = "<group>"; };
+		5F2FA7BB1D86673A00B95313 /* CJFWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CJFWindowController.xib; sourceTree = "<group>"; };
+		5F2FA7BE1D868C5C00B95313 /* CJFWindowManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJFWindowManager.h; sourceTree = "<group>"; };
+		5F2FA7BF1D868C5C00B95313 /* CJFWindowManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJFWindowManager.m; sourceTree = "<group>"; };
+		5F2FA7CD1D870E0B00B95313 /* CJFNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJFNetworkManager.h; sourceTree = "<group>"; };
+		5F2FA7CE1D870E0B00B95313 /* CJFNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJFNetworkManager.m; sourceTree = "<group>"; };
+		5F2FA7D71D879E3E00B95313 /* TimedTaskController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimedTaskController.h; sourceTree = "<group>"; };
+		5F2FA7D81D879E3E00B95313 /* TimedTaskController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimedTaskController.m; sourceTree = "<group>"; };
+		5F2FA7DA1D879E3E00B95313 /* CJFQueueManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJFQueueManager.h; sourceTree = "<group>"; };
+		5F2FA7DB1D879E3E00B95313 /* CJFQueueManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJFQueueManager.m; sourceTree = "<group>"; };
+		5F2FA7DC1D879E3E00B95313 /* CJFTimerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJFTimerManager.h; sourceTree = "<group>"; };
+		5F2FA7DD1D879E3E00B95313 /* CJFTimerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJFTimerManager.m; sourceTree = "<group>"; };
+		5F2FA7E21D879ECB00B95313 /* CrashTimedModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrashTimedModel.h; sourceTree = "<group>"; };
+		5F2FA7E31D879ECB00B95313 /* CrashTimedModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrashTimedModel.m; sourceTree = "<group>"; };
+		5F2FA7E51D87A88E00B95313 /* CrashTaskManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrashTaskManager.h; sourceTree = "<group>"; };
+		5F2FA7E61D87A88E00B95313 /* CrashTaskManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrashTaskManager.m; sourceTree = "<group>"; };
+		5F2FA7E81D87A8A600B95313 /* CrashTaskDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrashTaskDataManager.h; sourceTree = "<group>"; };
+		5F2FA7E91D87A8A600B95313 /* CrashTaskDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrashTaskDataManager.m; sourceTree = "<group>"; };
+		5F2FA7EB1D87D8B100B95313 /* TimedTaskTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimedTaskTableViewController.h; sourceTree = "<group>"; };
+		5F2FA7EC1D87D8B100B95313 /* TimedTaskTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimedTaskTableViewController.m; sourceTree = "<group>"; };
+		5F40996F1D3340F800B8FF0B /* StatisticsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatisticsViewController.h; sourceTree = "<group>"; };
+		5F4099701D3340F800B8FF0B /* StatisticsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatisticsViewController.m; sourceTree = "<group>"; };
+		5F4099721D3340F800B8FF0B /* TranslateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TranslateViewController.h; sourceTree = "<group>"; };
+		5F4099731D3340F800B8FF0B /* TranslateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TranslateViewController.m; sourceTree = "<group>"; };
+		5F44597A1DE5762B000CE5D3 /* CJFScriptExecuteManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJFScriptExecuteManager.h; sourceTree = "<group>"; };
+		5F44597B1DE5762B000CE5D3 /* CJFScriptExecuteManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJFScriptExecuteManager.m; sourceTree = "<group>"; };
+		5F44597D1DE593B2000CE5D3 /* CommonMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonMacro.h; sourceTree = "<group>"; };
+		5F64E0FE1E28740600A1B298 /* JDiOSRepetitionReportCheck.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = JDiOSRepetitionReportCheck.py; sourceTree = "<group>"; };
+		5F64E0FF1E28740600A1B298 /* JDiOSUUIDDayToDay.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = JDiOSUUIDDayToDay.py; sourceTree = "<group>"; };
+		5F64E1031E2880AF00A1B298 /* __init__.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = __init__.py; sourceTree = "<group>"; };
+		5F64E1041E2880AF00A1B298 /* baseEx.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = baseEx.py; sourceTree = "<group>"; };
+		5F64E1051E2880AF00A1B298 /* cmdEx.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = cmdEx.py; sourceTree = "<group>"; };
+		5F64E1061E2880AF00A1B298 /* computeEx.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = computeEx.py; sourceTree = "<group>"; };
+		5F64E1071E2880AF00A1B298 /* crashSortModel.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = crashSortModel.py; sourceTree = "<group>"; };
+		5F64E1081E2880AF00A1B298 /* fileEx.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = fileEx.py; sourceTree = "<group>"; };
+		5F64E1091E2880AF00A1B298 /* timeEx.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = timeEx.py; sourceTree = "<group>"; };
+		5F7CA9491D40CC9C004B1744 /* JDGzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDGzip.h; sourceTree = "<group>"; };
+		5F7CA94A1D40CC9C004B1744 /* JDGzip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDGzip.m; sourceTree = "<group>"; };
+		5F7CA94C1D40D2A7004B1744 /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
+		5F8968021CD332950012CE1E /* Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
+		5F8968031CD332950012CE1E /* Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tools.m; sourceTree = "<group>"; };
+		5F8968051CD333E30012CE1E /* Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64.h; sourceTree = "<group>"; };
+		5F8968061CD333E30012CE1E /* Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64.m; sourceTree = "<group>"; };
+		5F8968071CD333E30012CE1E /* Base64Defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64Defines.h; sourceTree = "<group>"; };
+		5F8968081CD333E30012CE1E /* DES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DES.h; sourceTree = "<group>"; };
+		5F8968091CD333E30012CE1E /* Des.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Des.m; sourceTree = "<group>"; };
+		5F8990681DE3E86E007E73D1 /* CJFInitManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJFInitManager.h; sourceTree = "<group>"; };
+		5F8990691DE3E86E007E73D1 /* CJFInitManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJFInitManager.m; sourceTree = "<group>"; };
+		5F89906C1DE3FE86007E73D1 /* CJFPopoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJFPopoverViewController.h; sourceTree = "<group>"; };
+		5F89906D1DE3FE86007E73D1 /* CJFPopoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJFPopoverViewController.m; sourceTree = "<group>"; };
+		5F8A518B1DF68865002542B1 /* CrashAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrashAccountViewController.h; sourceTree = "<group>"; };
+		5F8A518C1DF68865002542B1 /* CrashAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrashAccountViewController.m; sourceTree = "<group>"; };
+		5FA1D6A71DDC0C5400CB3F6C /* JDiOSOOMClassify.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = JDiOSOOMClassify.py; sourceTree = "<group>"; };
+		5FA1D6A81DDC0C5400CB3F6C /* JDiPadAllCrashClassify.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = JDiPadAllCrashClassify.py; sourceTree = "<group>"; };
+		5FA1D6A91DDC0C5400CB3F6C /* JDiPadAllCrashConvert.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = JDiPadAllCrashConvert.py; sourceTree = "<group>"; };
+		5FA1D6AA1DDC0C5400CB3F6C /* JDiPadAllCrashParser.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = JDiPadAllCrashParser.py; sourceTree = "<group>"; };
+		5FA1D6AB1DDC0C5400CB3F6C /* JDiPadOneCrashLogParse.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = JDiPadOneCrashLogParse.py; sourceTree = "<group>"; };
+		5FA1D6B01DDC0C5400CB3F6C /* systemCache */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = systemCache; sourceTree = "<group>"; };
+		5FA1D6BE1DDC0C5400CB3F6C /* JDiOSAllCrashConvertMutilProcess.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = JDiOSAllCrashConvertMutilProcess.py; sourceTree = "<group>"; };
+		5FA1D6BF1DDC0C5400CB3F6C /* JDiOSCrashSortOutFinal.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = JDiOSCrashSortOutFinal.py; sourceTree = "<group>"; };
+		5FA1D6C01DDC0C5400CB3F6C /* JDiOSCrashSortOutInit.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = JDiOSCrashSortOutInit.py; sourceTree = "<group>"; };
+		5FA1D6C11DDC0C5400CB3F6C /* JDiOSCrashSortOutRecursion.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = JDiOSCrashSortOutRecursion.py; sourceTree = "<group>"; };
+		5FA1D6C21DDC0C5400CB3F6C /* JDiOSExcelFromDir.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = JDiOSExcelFromDir.py; sourceTree = "<group>"; };
+		5FA1D6C31DDC0C5400CB3F6C /* JDiOSNAV_URLSort.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = JDiOSNAV_URLSort.py; sourceTree = "<group>"; };
+		5FA1D6C41DDC0C5400CB3F6C /* JDiOSOOMFilter.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = JDiOSOOMFilter.py; sourceTree = "<group>"; };
+		5FA1D6C61DDC0C5400CB3F6C /* filterKeyWordMappingiPad.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = filterKeyWordMappingiPad.json; sourceTree = "<group>"; };
+		5FA1D6C71DDC0C5400CB3F6C /* filterKeyWordMappingiPhone.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = filterKeyWordMappingiPhone.json; sourceTree = "<group>"; };
+		5FA1D6C81DDC0C5400CB3F6C /* NavAndUrlSortiPad.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = NavAndUrlSortiPad.json; sourceTree = "<group>"; };
+		5FA1D6C91DDC0C5400CB3F6C /* NavAndUrlSortiPhone.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = NavAndUrlSortiPhone.json; sourceTree = "<group>"; };
+		5FA1D6CA1DDC0C5400CB3F6C /* systemKeyWordMappingiPad.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = systemKeyWordMappingiPad.json; sourceTree = "<group>"; };
+		5FA1D6CB1DDC0C5400CB3F6C /* systemKeyWordMappingiPhone.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = systemKeyWordMappingiPhone.json; sourceTree = "<group>"; };
+		5FBDA76E1DEC329A00494565 /* CJFWorkKit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CJFWorkKit.entitlements; sourceTree = "<group>"; };
+		5FD16C051D2FD60700D96295 /* CrashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrashViewController.h; sourceTree = "<group>"; };
+		5FD16C061D2FD60700D96295 /* CrashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrashViewController.m; sourceTree = "<group>"; };
+		5FD16C091D2FD78B00D96295 /* ClassifyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassifyViewController.h; sourceTree = "<group>"; };
+		5FD16C0A1D2FD78B00D96295 /* ClassifyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassifyViewController.m; sourceTree = "<group>"; };
+		5FD16C0C1D2FD7D100D96295 /* ParserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParserViewController.h; sourceTree = "<group>"; };
+		5FD16C0D1D2FD7D100D96295 /* ParserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParserViewController.m; sourceTree = "<group>"; };
+		5FE6D98B1E0BA834006665B5 /* JDDataContentFilter.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = JDDataContentFilter.py; sourceTree = "<group>"; };
+		5FE6D98C1E0BA834006665B5 /* JDiOSInvalidCrashExtract.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = JDiOSInvalidCrashExtract.py; sourceTree = "<group>"; };
+		5FE6D98D1E0BA834006665B5 /* JDiOSUniqUUID.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = JDiOSUniqUUID.py; sourceTree = "<group>"; };
+		5FEAFDF11CD1EEBE00516E15 /* CJFWorkKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CJFWorkKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FEAFDF41CD1EEBE00516E15 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5FEAFDF51CD1EEBE00516E15 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5FEAFDF81CD1EEBE00516E15 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5FEAFDFA1CD1EEBE00516E15 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		5FEAFDFB1CD1EEBE00516E15 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5FEAFDFD1CD1EEBE00516E15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5FEAFE001CD1EEBE00516E15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5FEAFE021CD1EEBE00516E15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FEAFE0E1CD212BF00516E15 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		5FFC1E171DEC5A5C00A21FC8 /* CJFViewControllerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CJFViewControllerProtocol.h; sourceTree = "<group>"; };
+		5FFDAD8A1DAC8C350038786D /* NavUrlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavUrlViewController.m; sourceTree = "<group>"; };
+		5FFDAD8B1DAC8C350038786D /* NavUrlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavUrlViewController.h; sourceTree = "<group>"; };
+		5FFDAD8D1DAC8C430038786D /* QuickCountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuickCountViewController.m; sourceTree = "<group>"; };
+		5FFDAD8E1DAC8C430038786D /* QuickCountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuickCountViewController.h; sourceTree = "<group>"; };
+		5FFDAD901DAC8C4B0038786D /* ExcelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExcelViewController.m; sourceTree = "<group>"; };
+		5FFDAD911DAC8C4B0038786D /* ExcelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExcelViewController.h; sourceTree = "<group>"; };
+		5FFE669F1DE7ED9000984DD2 /* GetRemoteCrashDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetRemoteCrashDataManager.h; sourceTree = "<group>"; };
+		5FFE66A01DE7ED9000984DD2 /* GetRemoteCrashDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetRemoteCrashDataManager.m; sourceTree = "<group>"; };
+		5FFE66A21DEA704300984DD2 /* CJFCrashDataReadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJFCrashDataReadManager.h; sourceTree = "<group>"; };
+		5FFE66A31DEA704300984DD2 /* CJFCrashDataReadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJFCrashDataReadManager.m; sourceTree = "<group>"; };
+		5FFE66A61DEBDDEB00984DD2 /* LocalCrashShortCutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalCrashShortCutViewController.h; sourceTree = "<group>"; };
+		5FFE66A71DEBDDEB00984DD2 /* LocalCrashShortCutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalCrashShortCutViewController.m; sourceTree = "<group>"; };
+		5FFE66AA1DEC199C00984DD2 /* QuicklyImportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuicklyImportViewController.h; sourceTree = "<group>"; };
+		5FFE66AB1DEC199C00984DD2 /* QuicklyImportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuicklyImportViewController.m; sourceTree = "<group>"; };
+		5FFFA9931D741798009C6497 /* NSData+Sperate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Sperate.h"; sourceTree = "<group>"; };
+		5FFFA9941D741798009C6497 /* NSData+Sperate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Sperate.m"; sourceTree = "<group>"; };
+		5FFFA9961D7419F4009C6497 /* CJFFileReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJFFileReader.h; sourceTree = "<group>"; };
+		5FFFA9971D7419F4009C6497 /* CJFFileReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJFFileReader.m; sourceTree = "<group>"; };
+		A5E48E1C89195CD3C19329D3 /* Pods-CJFWorkKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CJFWorkKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CJFWorkKit/Pods-CJFWorkKit.debug.xcconfig"; sourceTree = "<group>"; };
+		D97BE13E65ED21C75BAFF822 /* libPods-CJFWorkKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CJFWorkKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5FEAFDEE1CD1EEBE00516E15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F7CA94D1D40D2A7004B1744 /* libz.1.2.5.tbd in Frameworks */,
+				92FEB968AA3F2105F7778CE0 /* libPods-CJFWorkKit.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3E86DA4EA1E1B924C28BD806 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A5E48E1C89195CD3C19329D3 /* Pods-CJFWorkKit.debug.xcconfig */,
+				10B0C5623B934AABBF248790 /* Pods-CJFWorkKit.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5F2FA7CC1D870E0B00B95313 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				5F2FA7CD1D870E0B00B95313 /* CJFNetworkManager.h */,
+				5F2FA7CE1D870E0B00B95313 /* CJFNetworkManager.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		5F2FA7D61D879E3E00B95313 /* CrashTimedTask */ = {
+			isa = PBXGroup;
+			children = (
+				5F2FA7D71D879E3E00B95313 /* TimedTaskController.h */,
+				5F2FA7D81D879E3E00B95313 /* TimedTaskController.m */,
+				5F2FA7E21D879ECB00B95313 /* CrashTimedModel.h */,
+				5F2FA7E31D879ECB00B95313 /* CrashTimedModel.m */,
+				5F2FA7E51D87A88E00B95313 /* CrashTaskManager.h */,
+				5F2FA7E61D87A88E00B95313 /* CrashTaskManager.m */,
+				5F2FA7E81D87A8A600B95313 /* CrashTaskDataManager.h */,
+				5F2FA7E91D87A8A600B95313 /* CrashTaskDataManager.m */,
+				5F2FA7EB1D87D8B100B95313 /* TimedTaskTableViewController.h */,
+				5F2FA7EC1D87D8B100B95313 /* TimedTaskTableViewController.m */,
+			);
+			path = CrashTimedTask;
+			sourceTree = "<group>";
+		};
+		5F2FA7D91D879E3E00B95313 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				5F2FA7DA1D879E3E00B95313 /* CJFQueueManager.h */,
+				5F2FA7DB1D879E3E00B95313 /* CJFQueueManager.m */,
+				5F2FA7DC1D879E3E00B95313 /* CJFTimerManager.h */,
+				5F2FA7DD1D879E3E00B95313 /* CJFTimerManager.m */,
+				5F8990681DE3E86E007E73D1 /* CJFInitManager.h */,
+				5F8990691DE3E86E007E73D1 /* CJFInitManager.m */,
+				5F44597A1DE5762B000CE5D3 /* CJFScriptExecuteManager.h */,
+				5F44597B1DE5762B000CE5D3 /* CJFScriptExecuteManager.m */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		5F2FA7E11D879E8600B95313 /* category */ = {
+			isa = PBXGroup;
+			children = (
+				5F2D387F1CD9C22E0015D7CB /* NSString+filter.h */,
+				5F2D38801CD9C22E0015D7CB /* NSString+filter.m */,
+				5F2D38621CD8A8890015D7CB /* NSTimer+Weak.h */,
+				5F2D38631CD8A8890015D7CB /* NSTimer+Weak.m */,
+				5F2D38581CD845880015D7CB /* NSDate+HAndM.h */,
+				5F2D38591CD845880015D7CB /* NSDate+HAndM.m */,
+				5FFFA9931D741798009C6497 /* NSData+Sperate.h */,
+				5FFFA9941D741798009C6497 /* NSData+Sperate.m */,
+			);
+			name = category;
+			sourceTree = "<group>";
+		};
+		5F40996E1D3340F800B8FF0B /* 本地提取 */ = {
+			isa = PBXGroup;
+			children = (
+				5F40996F1D3340F800B8FF0B /* StatisticsViewController.h */,
+				5F4099701D3340F800B8FF0B /* StatisticsViewController.m */,
+				5FFFA9961D7419F4009C6497 /* CJFFileReader.h */,
+				5FFFA9971D7419F4009C6497 /* CJFFileReader.m */,
+				5FFE66A21DEA704300984DD2 /* CJFCrashDataReadManager.h */,
+				5FFE66A31DEA704300984DD2 /* CJFCrashDataReadManager.m */,
+			);
+			name = "本地提取";
+			path = Statistics;
+			sourceTree = "<group>";
+		};
+		5F4099711D3340F800B8FF0B /* OOM归类 */ = {
+			isa = PBXGroup;
+			children = (
+				5F4099721D3340F800B8FF0B /* TranslateViewController.h */,
+				5F4099731D3340F800B8FF0B /* TranslateViewController.m */,
+			);
+			name = "OOM归类";
+			path = Translate;
+			sourceTree = "<group>";
+		};
+		5F64E1021E2880AF00A1B298 /* CJFKit */ = {
+			isa = PBXGroup;
+			children = (
+				5F64E1031E2880AF00A1B298 /* __init__.py */,
+				5F64E1041E2880AF00A1B298 /* baseEx.py */,
+				5F64E1051E2880AF00A1B298 /* cmdEx.py */,
+				5F64E1061E2880AF00A1B298 /* computeEx.py */,
+				5F64E1071E2880AF00A1B298 /* crashSortModel.py */,
+				5F64E1081E2880AF00A1B298 /* fileEx.py */,
+				5F64E1091E2880AF00A1B298 /* timeEx.py */,
+			);
+			path = CJFKit;
+			sourceTree = "<group>";
+		};
+		5F8967FF1CD332130012CE1E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5FFC1E161DEC5A2C00A21FC8 /* Protocol */,
+				5F2FA7E11D879E8600B95313 /* category */,
+				5F8968051CD333E30012CE1E /* Base64.h */,
+				5F8968061CD333E30012CE1E /* Base64.m */,
+				5F8968071CD333E30012CE1E /* Base64Defines.h */,
+				5F8968081CD333E30012CE1E /* DES.h */,
+				5F8968091CD333E30012CE1E /* Des.m */,
+				5F7CA9491D40CC9C004B1744 /* JDGzip.h */,
+				5F7CA94A1D40CC9C004B1744 /* JDGzip.m */,
+				5F8968021CD332950012CE1E /* Tools.h */,
+				5F8968031CD332950012CE1E /* Tools.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		5F89906B1DE3FE6B007E73D1 /* PopoverVC */ = {
+			isa = PBXGroup;
+			children = (
+				5F89906C1DE3FE86007E73D1 /* CJFPopoverViewController.h */,
+				5F89906D1DE3FE86007E73D1 /* CJFPopoverViewController.m */,
+			);
+			path = PopoverVC;
+			sourceTree = "<group>";
+		};
+		5FA1D6A41DDC056300CB3F6C /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				5FA1D6A51DDC0C5400CB3F6C /* ParserScript */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		5FA1D6A51DDC0C5400CB3F6C /* ParserScript */ = {
+			isa = PBXGroup;
+			children = (
+				5F64E1021E2880AF00A1B298 /* CJFKit */,
+				5FA1D6A61DDC0C5400CB3F6C /* backUp */,
+				5FA1D6AC1DDC0C5400CB3F6C /* cache */,
+				5FA1D6C51DDC0C5400CB3F6C /* setting */,
+				5F64E0FE1E28740600A1B298 /* JDiOSRepetitionReportCheck.py */,
+				5F64E0FF1E28740600A1B298 /* JDiOSUUIDDayToDay.py */,
+				5FE6D98B1E0BA834006665B5 /* JDDataContentFilter.py */,
+				5FE6D98C1E0BA834006665B5 /* JDiOSInvalidCrashExtract.py */,
+				5FE6D98D1E0BA834006665B5 /* JDiOSUniqUUID.py */,
+				5FA1D6BE1DDC0C5400CB3F6C /* JDiOSAllCrashConvertMutilProcess.py */,
+				5FA1D6BF1DDC0C5400CB3F6C /* JDiOSCrashSortOutFinal.py */,
+				5FA1D6C01DDC0C5400CB3F6C /* JDiOSCrashSortOutInit.py */,
+				5FA1D6C11DDC0C5400CB3F6C /* JDiOSCrashSortOutRecursion.py */,
+				5FA1D6C21DDC0C5400CB3F6C /* JDiOSExcelFromDir.py */,
+				5FA1D6C31DDC0C5400CB3F6C /* JDiOSNAV_URLSort.py */,
+				5FA1D6C41DDC0C5400CB3F6C /* JDiOSOOMFilter.py */,
+			);
+			path = ParserScript;
+			sourceTree = "<group>";
+		};
+		5FA1D6A61DDC0C5400CB3F6C /* backUp */ = {
+			isa = PBXGroup;
+			children = (
+				5FA1D6A71DDC0C5400CB3F6C /* JDiOSOOMClassify.py */,
+				5FA1D6A81DDC0C5400CB3F6C /* JDiPadAllCrashClassify.py */,
+				5FA1D6A91DDC0C5400CB3F6C /* JDiPadAllCrashConvert.py */,
+				5FA1D6AA1DDC0C5400CB3F6C /* JDiPadAllCrashParser.py */,
+				5FA1D6AB1DDC0C5400CB3F6C /* JDiPadOneCrashLogParse.py */,
+			);
+			path = backUp;
+			sourceTree = "<group>";
+		};
+		5FA1D6AC1DDC0C5400CB3F6C /* cache */ = {
+			isa = PBXGroup;
+			children = (
+				5FA1D6B01DDC0C5400CB3F6C /* systemCache */,
+			);
+			path = cache;
+			sourceTree = "<group>";
+		};
+		5FA1D6C51DDC0C5400CB3F6C /* setting */ = {
+			isa = PBXGroup;
+			children = (
+				5FA1D6C61DDC0C5400CB3F6C /* filterKeyWordMappingiPad.json */,
+				5FA1D6C71DDC0C5400CB3F6C /* filterKeyWordMappingiPhone.json */,
+				5FA1D6C81DDC0C5400CB3F6C /* NavAndUrlSortiPad.json */,
+				5FA1D6C91DDC0C5400CB3F6C /* NavAndUrlSortiPhone.json */,
+				5FA1D6CA1DDC0C5400CB3F6C /* systemKeyWordMappingiPad.json */,
+				5FA1D6CB1DDC0C5400CB3F6C /* systemKeyWordMappingiPhone.json */,
+			);
+			path = setting;
+			sourceTree = "<group>";
+		};
+		5FCCCBF01D1A454F008D1BBF /* Crash */ = {
+			isa = PBXGroup;
+			children = (
+				5FFDAD891DAC8B670038786D /* Nav_Url */,
+				5FFDAD881DAC8B5A0038786D /* 快速统计 */,
+				5FFDAD871DAC8B4F0038786D /* Excel */,
+				5F40996E1D3340F800B8FF0B /* 本地提取 */,
+				5F4099711D3340F800B8FF0B /* OOM归类 */,
+				5FD16C031D2FD60700D96295 /* 归类 */,
+				5FD16C041D2FD60700D96295 /* 网络拉取 */,
+				5FD16C071D2FD60700D96295 /* 本地解析 */,
+			);
+			path = Crash;
+			sourceTree = "<group>";
+		};
+		5FD16C031D2FD60700D96295 /* 归类 */ = {
+			isa = PBXGroup;
+			children = (
+				5FD16C091D2FD78B00D96295 /* ClassifyViewController.h */,
+				5FD16C0A1D2FD78B00D96295 /* ClassifyViewController.m */,
+			);
+			name = "归类";
+			path = Classify;
+			sourceTree = "<group>";
+		};
+		5FD16C041D2FD60700D96295 /* 网络拉取 */ = {
+			isa = PBXGroup;
+			children = (
+				5FD16C051D2FD60700D96295 /* CrashViewController.h */,
+				5FD16C061D2FD60700D96295 /* CrashViewController.m */,
+				5FFE669F1DE7ED9000984DD2 /* GetRemoteCrashDataManager.h */,
+				5FFE66A01DE7ED9000984DD2 /* GetRemoteCrashDataManager.m */,
+				5F8A518B1DF68865002542B1 /* CrashAccountViewController.h */,
+				5F8A518C1DF68865002542B1 /* CrashAccountViewController.m */,
+			);
+			name = "网络拉取";
+			path = Get;
+			sourceTree = "<group>";
+		};
+		5FD16C071D2FD60700D96295 /* 本地解析 */ = {
+			isa = PBXGroup;
+			children = (
+				5FD16C0C1D2FD7D100D96295 /* ParserViewController.h */,
+				5FD16C0D1D2FD7D100D96295 /* ParserViewController.m */,
+			);
+			name = "本地解析";
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		5FEAFDE81CD1EEBE00516E15 = {
+			isa = PBXGroup;
+			children = (
+				5FA1D6A41DDC056300CB3F6C /* Resource */,
+				5FEAFDF31CD1EEBE00516E15 /* CJFWorkKit */,
+				5FEAFDF21CD1EEBE00516E15 /* Products */,
+				3E86DA4EA1E1B924C28BD806 /* Pods */,
+				F2E632B02C6EFDD132325196 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5FEAFDF21CD1EEBE00516E15 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5FEAFDF11CD1EEBE00516E15 /* CJFWorkKit.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5FEAFDF31CD1EEBE00516E15 /* CJFWorkKit */ = {
+			isa = PBXGroup;
+			children = (
+				5FBDA76E1DEC329A00494565 /* CJFWorkKit.entitlements */,
+				5FFE66A91DEC191200984DD2 /* QuicklyImportVC */,
+				5FFE66A51DEBDDA800984DD2 /* ShortCutVC */,
+				5F89906B1DE3FE6B007E73D1 /* PopoverVC */,
+				5F2FA7D61D879E3E00B95313 /* CrashTimedTask */,
+				5F2FA7D91D879E3E00B95313 /* Manager */,
+				5F2FA7CC1D870E0B00B95313 /* Network */,
+				5FCCCBF01D1A454F008D1BBF /* Crash */,
+				5F8967FF1CD332130012CE1E /* Utils */,
+				5FEAFDF41CD1EEBE00516E15 /* AppDelegate.h */,
+				5FEAFDF51CD1EEBE00516E15 /* AppDelegate.m */,
+				5FEAFDFA1CD1EEBE00516E15 /* ViewController.h */,
+				5FEAFDFB1CD1EEBE00516E15 /* ViewController.m */,
+				5FEAFDFF1CD1EEBE00516E15 /* Main.storyboard */,
+				5F2FA7B91D86673A00B95313 /* CJFWindowController.h */,
+				5F2FA7BA1D86673A00B95313 /* CJFWindowController.m */,
+				5F2FA7BB1D86673A00B95313 /* CJFWindowController.xib */,
+				5F2FA7BE1D868C5C00B95313 /* CJFWindowManager.h */,
+				5F2FA7BF1D868C5C00B95313 /* CJFWindowManager.m */,
+				5FEAFDF71CD1EEBE00516E15 /* Supporting Files */,
+			);
+			path = CJFWorkKit;
+			sourceTree = "<group>";
+		};
+		5FEAFDF71CD1EEBE00516E15 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5FEAFDFD1CD1EEBE00516E15 /* Assets.xcassets */,
+				5FEAFE021CD1EEBE00516E15 /* Info.plist */,
+				5F2D385B1CD846470015D7CB /* configManager.h */,
+				5FEAFE0E1CD212BF00516E15 /* PrefixHeader.pch */,
+				5FEAFDF81CD1EEBE00516E15 /* main.m */,
+				5F44597D1DE593B2000CE5D3 /* CommonMacro.h */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5FFC1E161DEC5A2C00A21FC8 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				5FFC1E171DEC5A5C00A21FC8 /* CJFViewControllerProtocol.h */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		5FFDAD871DAC8B4F0038786D /* Excel */ = {
+			isa = PBXGroup;
+			children = (
+				5FFDAD901DAC8C4B0038786D /* ExcelViewController.m */,
+				5FFDAD911DAC8C4B0038786D /* ExcelViewController.h */,
+			);
+			name = Excel;
+			sourceTree = "<group>";
+		};
+		5FFDAD881DAC8B5A0038786D /* 快速统计 */ = {
+			isa = PBXGroup;
+			children = (
+				5FFDAD8D1DAC8C430038786D /* QuickCountViewController.m */,
+				5FFDAD8E1DAC8C430038786D /* QuickCountViewController.h */,
+			);
+			name = "快速统计";
+			sourceTree = "<group>";
+		};
+		5FFDAD891DAC8B670038786D /* Nav_Url */ = {
+			isa = PBXGroup;
+			children = (
+				5FFDAD8A1DAC8C350038786D /* NavUrlViewController.m */,
+				5FFDAD8B1DAC8C350038786D /* NavUrlViewController.h */,
+			);
+			name = Nav_Url;
+			sourceTree = "<group>";
+		};
+		5FFE66A51DEBDDA800984DD2 /* ShortCutVC */ = {
+			isa = PBXGroup;
+			children = (
+				5FFE66A61DEBDDEB00984DD2 /* LocalCrashShortCutViewController.h */,
+				5FFE66A71DEBDDEB00984DD2 /* LocalCrashShortCutViewController.m */,
+			);
+			path = ShortCutVC;
+			sourceTree = "<group>";
+		};
+		5FFE66A91DEC191200984DD2 /* QuicklyImportVC */ = {
+			isa = PBXGroup;
+			children = (
+				5FFE66AA1DEC199C00984DD2 /* QuicklyImportViewController.h */,
+				5FFE66AB1DEC199C00984DD2 /* QuicklyImportViewController.m */,
+			);
+			path = QuicklyImportVC;
+			sourceTree = "<group>";
+		};
+		F2E632B02C6EFDD132325196 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5F7CA94C1D40D2A7004B1744 /* libz.1.2.5.tbd */,
+				D97BE13E65ED21C75BAFF822 /* libPods-CJFWorkKit.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5FEAFDF01CD1EEBE00516E15 /* CJFWorkKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FEAFE051CD1EEBE00516E15 /* Build configuration list for PBXNativeTarget "CJFWorkKit" */;
+			buildPhases = (
+				A3F9F30F1F15479A129E3DE0 /* Check Pods Manifest.lock */,
+				5FEAFDED1CD1EEBE00516E15 /* Sources */,
+				5FEAFDEE1CD1EEBE00516E15 /* Frameworks */,
+				5FEAFDEF1CD1EEBE00516E15 /* Resources */,
+				6EEEA13C0D533C4B5FA812C5 /* Embed Pods Frameworks */,
+				74BA8A415C0CDD3ADCE7524F /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CJFWorkKit;
+			productName = CJFWorkKit;
+			productReference = 5FEAFDF11CD1EEBE00516E15 /* CJFWorkKit.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5FEAFDE91CD1EEBE00516E15 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = ChengJianFeng;
+				TargetAttributes = {
+					5FEAFDF01CD1EEBE00516E15 = {
+						CreatedOnToolsVersion = 7.3;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+							com.apple.iCloud = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 5FEAFDEC1CD1EEBE00516E15 /* Build configuration list for PBXProject "CJFWorkKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5FEAFDE81CD1EEBE00516E15;
+			productRefGroup = 5FEAFDF21CD1EEBE00516E15 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5FEAFDF01CD1EEBE00516E15 /* CJFWorkKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5FEAFDEF1CD1EEBE00516E15 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FA1D6CF1DDC0C5400CB3F6C /* JDiPadAllCrashConvert.py in Resources */,
+				5FA1D6EA1DDC0C5400CB3F6C /* filterKeyWordMappingiPhone.json in Resources */,
+				5F64E10A1E2880AF00A1B298 /* __init__.py in Resources */,
+				5FA1D6E61DDC0C5400CB3F6C /* JDiOSExcelFromDir.py in Resources */,
+				5F64E1001E28740600A1B298 /* JDiOSRepetitionReportCheck.py in Resources */,
+				5FA1D6E41DDC0C5400CB3F6C /* JDiOSCrashSortOutInit.py in Resources */,
+				5F64E10C1E2880AF00A1B298 /* cmdEx.py in Resources */,
+				5F64E10B1E2880AF00A1B298 /* baseEx.py in Resources */,
+				5F64E1011E28740600A1B298 /* JDiOSUUIDDayToDay.py in Resources */,
+				5FE6D98F1E0BA834006665B5 /* JDiOSInvalidCrashExtract.py in Resources */,
+				5FA1D6CD1DDC0C5400CB3F6C /* JDiOSOOMClassify.py in Resources */,
+				5FA1D6E31DDC0C5400CB3F6C /* JDiOSCrashSortOutFinal.py in Resources */,
+				5FA1D6D01DDC0C5400CB3F6C /* JDiPadAllCrashParser.py in Resources */,
+				5F2FA7BD1D86673A00B95313 /* CJFWindowController.xib in Resources */,
+				5FA1D6D11DDC0C5400CB3F6C /* JDiPadOneCrashLogParse.py in Resources */,
+				5FA1D6ED1DDC0C5400CB3F6C /* systemKeyWordMappingiPad.json in Resources */,
+				5FA1D6E81DDC0C5400CB3F6C /* JDiOSOOMFilter.py in Resources */,
+				5FA1D6D51DDC0C5400CB3F6C /* systemCache in Resources */,
+				5F64E10E1E2880AF00A1B298 /* crashSortModel.py in Resources */,
+				5FA1D6EE1DDC0C5400CB3F6C /* systemKeyWordMappingiPhone.json in Resources */,
+				5FA1D6EB1DDC0C5400CB3F6C /* NavAndUrlSortiPad.json in Resources */,
+				5FA1D6E51DDC0C5400CB3F6C /* JDiOSCrashSortOutRecursion.py in Resources */,
+				5F64E1101E2880AF00A1B298 /* timeEx.py in Resources */,
+				5FE6D9901E0BA834006665B5 /* JDiOSUniqUUID.py in Resources */,
+				5FA1D6EC1DDC0C5400CB3F6C /* NavAndUrlSortiPhone.json in Resources */,
+				5FEAFDFE1CD1EEBE00516E15 /* Assets.xcassets in Resources */,
+				5FE6D98E1E0BA834006665B5 /* JDDataContentFilter.py in Resources */,
+				5FA1D6E91DDC0C5400CB3F6C /* filterKeyWordMappingiPad.json in Resources */,
+				5F64E10F1E2880AF00A1B298 /* fileEx.py in Resources */,
+				5FA1D6E21DDC0C5400CB3F6C /* JDiOSAllCrashConvertMutilProcess.py in Resources */,
+				5FEAFE011CD1EEBE00516E15 /* Main.storyboard in Resources */,
+				5F64E10D1E2880AF00A1B298 /* computeEx.py in Resources */,
+				5FA1D6E71DDC0C5400CB3F6C /* JDiOSNAV_URLSort.py in Resources */,
+				5FA1D6CE1DDC0C5400CB3F6C /* JDiPadAllCrashClassify.py in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6EEEA13C0D533C4B5FA812C5 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CJFWorkKit/Pods-CJFWorkKit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		74BA8A415C0CDD3ADCE7524F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CJFWorkKit/Pods-CJFWorkKit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3F9F30F1F15479A129E3DE0 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5FEAFDED1CD1EEBE00516E15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F2FA7E41D879ECB00B95313 /* CrashTimedModel.m in Sources */,
+				5F4099751D3340F800B8FF0B /* TranslateViewController.m in Sources */,
+				5FFFA9981D7419F4009C6497 /* CJFFileReader.m in Sources */,
+				5FD16C0E1D2FD7D100D96295 /* ParserViewController.m in Sources */,
+				5F2FA7EA1D87A8A600B95313 /* CrashTaskDataManager.m in Sources */,
+				5F2FA7DF1D879E3E00B95313 /* CJFQueueManager.m in Sources */,
+				5F89680A1CD333E30012CE1E /* Base64.m in Sources */,
+				5F8968041CD332950012CE1E /* Tools.m in Sources */,
+				5FEAFDFC1CD1EEBE00516E15 /* ViewController.m in Sources */,
+				5FFE66AC1DEC199C00984DD2 /* QuicklyImportViewController.m in Sources */,
+				5F89906E1DE3FE86007E73D1 /* CJFPopoverViewController.m in Sources */,
+				5F2FA7E01D879E3E00B95313 /* CJFTimerManager.m in Sources */,
+				5F2FA7ED1D87D8B100B95313 /* TimedTaskTableViewController.m in Sources */,
+				5FFE66A81DEBDDEB00984DD2 /* LocalCrashShortCutViewController.m in Sources */,
+				5F2FA7CF1D870E0B00B95313 /* CJFNetworkManager.m in Sources */,
+				5FEAFDF91CD1EEBE00516E15 /* main.m in Sources */,
+				5F2FA7E71D87A88E00B95313 /* CrashTaskManager.m in Sources */,
+				5F2FA7C01D868C5C00B95313 /* CJFWindowManager.m in Sources */,
+				5FFDAD8F1DAC8C430038786D /* QuickCountViewController.m in Sources */,
+				5F89680B1CD333E30012CE1E /* Des.m in Sources */,
+				5FFDAD8C1DAC8C350038786D /* NavUrlViewController.m in Sources */,
+				5FEAFDF61CD1EEBE00516E15 /* AppDelegate.m in Sources */,
+				5FFE66A11DE7ED9000984DD2 /* GetRemoteCrashDataManager.m in Sources */,
+				5F2FA7BC1D86673A00B95313 /* CJFWindowController.m in Sources */,
+				5F2D38641CD8A8890015D7CB /* NSTimer+Weak.m in Sources */,
+				5FFE66A41DEA704300984DD2 /* CJFCrashDataReadManager.m in Sources */,
+				5F2D385A1CD845880015D7CB /* NSDate+HAndM.m in Sources */,
+				5FD16C081D2FD60700D96295 /* CrashViewController.m in Sources */,
+				5F89906A1DE3E86E007E73D1 /* CJFInitManager.m in Sources */,
+				5FD16C0B1D2FD78B00D96295 /* ClassifyViewController.m in Sources */,
+				5F7CA94B1D40CC9C004B1744 /* JDGzip.m in Sources */,
+				5F4099741D3340F800B8FF0B /* StatisticsViewController.m in Sources */,
+				5F44597C1DE5762B000CE5D3 /* CJFScriptExecuteManager.m in Sources */,
+				5F2D38811CD9C22E0015D7CB /* NSString+filter.m in Sources */,
+				5FFFA9951D741798009C6497 /* NSData+Sperate.m in Sources */,
+				5FFDAD921DAC8C4B0038786D /* ExcelViewController.m in Sources */,
+				5F8A518D1DF68865002542B1 /* CrashAccountViewController.m in Sources */,
+				5F2FA7DE1D879E3E00B95313 /* TimedTaskController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5FEAFDFF1CD1EEBE00516E15 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5FEAFE001CD1EEBE00516E15 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5FEAFE031CD1EEBE00516E15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		5FEAFE041CD1EEBE00516E15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		5FEAFE061CD1EEBE00516E15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5E48E1C89195CD3C19329D3 /* Pods-CJFWorkKit.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CJFWorkKit/CJFWorkKit.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/CJFWorkKit/PrefixHeader.pch";
+				INFOPLIST_FILE = CJFWorkKit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = CJF.JDCrashKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5FEAFE071CD1EEBE00516E15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10B0C5623B934AABBF248790 /* Pods-CJFWorkKit.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CJFWorkKit/CJFWorkKit.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/CJFWorkKit/PrefixHeader.pch";
+				INFOPLIST_FILE = CJFWorkKit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = CJF.JDCrashKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5FEAFDEC1CD1EEBE00516E15 /* Build configuration list for PBXProject "CJFWorkKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FEAFE031CD1EEBE00516E15 /* Debug */,
+				5FEAFE041CD1EEBE00516E15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5FEAFE051CD1EEBE00516E15 /* Build configuration list for PBXNativeTarget "CJFWorkKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FEAFE061CD1EEBE00516E15 /* Debug */,
+				5FEAFE071CD1EEBE00516E15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5FEAFDE91CD1EEBE00516E15 /* Project object */;
+}

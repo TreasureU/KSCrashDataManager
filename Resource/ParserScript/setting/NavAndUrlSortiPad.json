@@ -1,0 +1,14 @@
+{
+	"nav":[
+		"JDWebViewController"
+	],
+	"url_pre":[
+		"https://pay.m.jd.com/cpay/index.html?appId=jd_iphone_app4&",
+		"https://pay.m.jd.com/cpay/index.html?appId=jd_m_yyb&",
+		"https://pay.m.jd.com/cpay/index.html?appId=jd_ipad_app&",
+		"https://pay.m.jd.com/cpay/index.html?appId=jd_m_ydhcp&",
+		"https://msc.jd.com/auth/loginpage/wcoo/toAuthPage?",
+		"https://pay.m.jd.com/cpay/index.html?appId=jd_m_msha",
+		"://h5.m.jd.com/active/2fkgMFgeDZyA55EuSEi6VYeFv85W/index.html"
+	]
+}

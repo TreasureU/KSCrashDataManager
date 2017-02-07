@@ -1,0 +1,201 @@
+[
+   {
+	"fileDirName": "pre_all_fup",
+	"keyWords": [
+	  "SIGABRT",
+	  "_nano_vet_and_size_of_live",
+	  "system_version\": \"10"
+	],
+	"description":"FUP (All_Fup)",
+	"canFix":false
+  },{
+	"fileDirName": "pre_sql",
+	"keyWords": [
+	  "SIGABRT",
+	  "_nano_vet_and_size_of_live",
+	  "system_version\": \"10",
+	  "libsqlite3"
+	],	
+	"description":"FUP (iOS10.X)(libsqlite3)",
+	"canFix":false
+  },{
+	"fileDirName": "pre_0",
+	"keyWords": [
+	  "SIGABRT",
+	  "_nano_vet_and_size_of_live",
+	  "system_version\": \"10",
+	  "CFPropertyList"
+	],	
+	"description":"FUP (iOS10.X)(CFPropertyList)",
+	"canFix":false
+  },  {
+	"fileDirName": "pre_1",
+	"keyWords": [
+	  "SIGABRT",
+	  "_nano_vet_and_size_of_live",
+	  "system_version\": \"10",
+	  "CFURLCreateStringByAddingPercentEscapes"
+	],	
+	"description":"FUP (iOS10.X)(CFURLCreateStringByAddingPercentEscapes)",
+	"canFix":false
+  },  {
+	"fileDirName": "pre_2",
+	"keyWords": [
+	  "SIGABRT",
+	  "_nano_vet_and_size_of_live",
+	  "system_version\": \"10",
+	  "common_removeAllObjects"
+	],	
+	"description":"FUP (iOS10.X)(CF common_removeAllObjects)",
+	"canFix":false
+  },{
+	"fileDirName": "pre_4",
+	"keyWords": [
+	  "SIGABRT",
+	  "_nano_vet_and_size_of_live",
+	  "system_version\": \"10",
+	  "__CFBasicHashDrain"
+	],
+	"description":"FUP (iOS10.X)(__CFBasicHashRehash)",
+	"canFix":false
+  },  {
+	"fileDirName": "pre_5",
+	"keyWords": [
+	  "SIGABRT",
+	  "_nano_vet_and_size_of_live",
+	  "system_version\": \"10",
+	  "ImageIO"
+	],
+	"description":"FUP (iOS10.X)(ImageIO)",
+	"canFix":false
+  },  {
+	"fileDirName": "pre_6",
+	"keyWords": [
+	  "SIGABRT",
+	  "_nano_vet_and_size_of_live",
+	  "system_version\": \"10",
+	  "__CFStringDeallocate"
+	],
+	"description":"FUP (iOS10.X)(__CFStringDeallocate)",
+	"canFix":false
+  },  {
+	"fileDirName": "pre_7",
+	"keyWords": [
+	  "SIGABRT",
+	  "_nano_vet_and_size_of_live",
+	  "system_version\": \"10",
+	  "CoreText"
+	],
+	"description":"FUP (iOS10.X)(CoreText)",
+	"canFix":false
+  },  {
+	"fileDirName": "pre_8",
+	"keyWords": [
+	  "SIGABRT",
+	  "_nano_vet_and_size_of_live",
+	  "system_version\": \"10",
+	  "DataDetectorsCore"
+	],
+	"description":"FUP (iOS10.X)(DataDetectorsCore)",
+	"canFix":false
+  },  {
+	"fileDirName": "pre_9",
+	"keyWords": [
+	  "SIGABRT",
+	  "_nano_vet_and_size_of_live",
+	  "system_version\": \"10",
+	  "__CFBasicHashRehash"
+	],
+	"description":"FUP (iOS10.X)(__CFBasicHashRehash)",
+	"canFix":false
+  },  {
+	"fileDirName": "pre_10",
+	"keyWords": [
+	  "SIGABRT",
+	  "_nano_vet_and_size_of_live",
+	  "system_version\": \"10",
+	  "__CFBinaryPlistWriteOrPresize"
+	],
+	"description":"FUP (iOS10.X)(__CFBinaryPlistWriteOrPresize)",
+	"canFix":false
+  },  {
+	"fileDirName": "pre_11",
+	"keyWords": [
+	  "SIGABRT",
+	  "_nano_vet_and_size_of_live",
+	  "system_version\": \"10",
+	  "[__NSOperationInternal _start:]"
+	],
+	"description":"FUP (iOS10.X)([__NSOperationInternal _start:])",
+	"canFix":false
+  },{
+	"fileDirName": "pre_12",
+	"keyWords": [
+	  "SIGABRT",
+	  "_nano_vet_and_size_of_live",
+	  "system_version\": \"10",
+	  "verifyProfileAgainstSRGB"
+	],
+	"description":"FUP (iOS10.X)(ColorSync verifyProfileAgainstSRGB)",
+	"canFix":false
+  },{
+	"fileDirName": "pre_13",
+	"keyWords": [
+	  "SIGABRT",
+	  "_nano_vet_and_size_of_live",
+	  "system_version\": \"10",
+	  "malloc_zone_realloc"
+	],
+	"description":"FUP (iOS10.X)(libsystem_malloc malloc_zone_realloc)",
+	"canFix":false
+  },{
+	"fileDirName": "pre_14",
+	"keyWords": [
+	  "SIGABRT",
+	  "_nano_vet_and_size_of_live",
+	  "system_version\": \"10",
+	  "_CFStringCreateWithFormatAndArgumentsAux2"
+	],
+	"description":"FUP (iOS10.X)(_CFStringCreateWithFormatAndArgumentsAux2)",
+	"canFix":false
+  },{
+	"fileDirName": "pre_15",
+	"keyWords": [
+	  "SIGABRT",
+	  "_nano_vet_and_size_of_live",
+	  "system_version\": \"10",
+	  "CFNetwork"
+	],
+	"description":"FUP (iOS10.X)(CFNetwork)",
+	"canFix":false
+  },{
+	"fileDirName": "pre_16",
+	"keyWords": [
+	  "SIGABRT",
+	  "_nano_vet_and_size_of_live",
+	  "system_version\": \"10",
+	  "JPEGReadPlugin"
+	],
+	"description":"FUP (iOS10.X)(ImageIO JPEGReadPlugin)",
+	"canFix":false
+  },{
+	"fileDirName": "pre_17",
+	"keyWords": [
+	  "SIGABRT",
+	  "_nano_vet_and_size_of_live",
+	  "system_version\": \"10",
+	  "WebCore::"
+	],
+	"description":"FUP (iOS10.X)(WebCore)",
+	"canFix":false
+  },{
+	"fileDirName": "pre_Other",
+	"keyWords": [
+	  "SIGABRT",
+	  "_nano_vet_and_size_of_live",
+	  "system_version\": \"10"
+	],
+	"description":"FUP (iOS10.X)(Other)",
+	"canFix":false
+  }
+]

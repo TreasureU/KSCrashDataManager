@@ -1,0 +1,735 @@
+[
+  {
+	"fileDirName": "1",
+	"keyWords": [
+	  "TTTChannelContainerViewContoller",
+	  "FinalSearchListViewController",
+	  "armv7s",
+	  "0x380dc000"
+	],
+	"description":"it is test",
+	"canFix":true
+  },
+  {
+	"fileDirName": "2",
+	"keyWord": "\"last_deallocated_obj\": \"JDMyJDOrderViewController\",",
+	"param": {
+	  "classifyByController": true
+	},
+	"description":"it is test",
+	"canFix":false
+  },
+  {
+	"fileDirName": "3",
+	"keyWordList": [
+	  "JDTDSSKeychainQuery.m:",
+	  "JDTDRSA.m:",
+	  "JDTDSSKeychainQuery.m:",
+	  "JDTDRSA.m:",
+	  "JDTDCipher.m:",
+	  "JDTDRiskService.m:",
+	  "JDTDReachability.m:",
+	  "JDPPayModule.m:",
+	  "JDPPaymentSmallFreeViewController.m:",
+	  "JDTDUICKeyChainStore.m:",
+	  "JDPNextStepManager.m:",
+	  "JDTDFCUUID.m:"
+	],
+	"param": {
+	  "classifyByController": true
+	},
+	"description":"JDPay",
+	"canFix":true
+  },
+  {
+	"fileDirName": "4",
+	"keyWordList": [
+	  "-[_UINavigationParallaxTransition animateTransition:]"
+	],
+	"param": {
+	  "classifyByController": true
+	},
+	"description":"iOS 7 Push Animation",
+	"canFix":false
+  },
+  {
+	"fileDirName": "5",
+	"keyWordList": [
+	  "SwipeSelectionPro.dylib"
+	],
+	"param": {
+	  "classifyByController": true
+	},
+	"description":"Jailbreak issues",
+	"canFix":false
+  },
+  {
+	"fileDirName": "6",
+	"keyWordList": [
+	  "[_UIViewServiceInterface _initWithConnectionInfo:",
+	  "-[NSException initWithCoder:]"
+	],
+	"param": {
+	  "classifyByController": true
+	},
+	"description":"UIView XPC",
+	"canFix":false
+  },
+  {
+	"fileDirName": "7",
+	"keyWordList": [
+	  "-[WebFrame(WebInternal) _drawRect:contentsOnly:]",
+	  "WTF::StringImpl::createCFString()"
+	],
+	"param": {
+	  "classifyByController": true
+	},
+	"description":"WebKit Internal",
+	"canFix":false
+  },
+  {
+	"fileDirName": "8",
+	"keyWords": [
+	  "\"last_deallocated_obj\": \"JDMobileChargeViewController\"",
+	  "_UIGestureRecognizerSendActions"
+	],
+	"param": {
+	  "classifyByController": true
+	},
+	"description":"JDMobileChargeViewController Memory Manangement",
+	"canFix":false
+  },
+  {
+	"fileDirName": "9",
+	"keyWords": [
+	  "\"last_deallocated_obj\": \"WareConsultListViewController\"",
+	  "_notifyDidScroll"
+	],
+	"param": {
+	  "classifyByController": true
+	},
+	"description":"WareInfoB Memory Manangement",
+	"canFix":true
+  },
+  {
+	"fileDirName": "10",
+	"keyWordList": [
+	  "gpus_ReturnNotPermittedKillClient",
+	  "gpus_ReturnContextErrorKillClient"
+	],
+	"param": {
+	  "classifyByController": true
+	},
+	"description":"gpus kill",
+	"canFix":false
+  },
+  {
+	"fileDirName": "11",
+	"keyWords": [
+	  "\"last_deallocated_obj\": \"JDGoodShopCategoryHeadView\"",
+	  "UIScrollView"
+	],
+	"param": {
+	  "classifyByController": true
+	},
+	"description":"JDGoodShopCategoryHeadView Memory Manangement",
+	"canFix":true
+  },
+  {
+	"fileDirName": "12",
+	"keyWords": [
+	  "QQInput.dylib"
+	],
+	"param": {
+	  "classifyByController": true
+	},
+	"description":"QQInput.dylib",
+	"canFix":false
+  },
+  {
+	"fileDirName": "13",
+	"keyWords": [
+	  "NSInternalInconsistencyException",
+	  "_configureCellForDisplay"
+	],
+	"param": {
+	  "classifyByController": true
+	},
+	"description":"UITableView Wrong Config",
+	"canFix":true
+  },
+  {
+	"fileDirName": "15",
+	"keyWords": [
+	  "\"last_deallocated_obj\": \"WareCommentImageListViewController\"",
+	  "_notifyDidScroll"
+	],	
+	"param": {
+	  "classifyByController": true
+	},
+	"description":"WareCommentImageListViewController Memory Manangement",
+	"canFix":true
+  },
+  {
+	"fileDirName": "16",
+	"keyWords": [
+	  "\"crashThreadSymbolList\": null",
+	  "\"user\": null"
+	],	
+	"param": {
+	  "classifyByController": true
+	},
+	"description":"Empty Report",
+	"canFix":true
+  },
+  {
+	"fileDirName": "17",
+	"keyWords": [
+	  "\"last_deallocated_obj\": \"UIWebOverflowContentView\"",
+	  "-[UIView(Hierarchy) superview]"
+	],	
+	"param": {
+	  "classifyByController": true
+	},
+	"description":"UIWebView Memory Manangement",
+	"canFix":false
+  },
+  {
+	"fileDirName": "18",
+	"keyWordList": [
+	  "SogouInputIPhone.dylib",
+	  "SogouInputIPhoneIOS7.dylib"
+	],	
+	"param": {
+	  "classifyByController": true
+	},
+	"description":"SogouInputIPhone.dylib",
+	"canFix":false
+  },
+  {
+	"fileDirName": "21",
+	"keyWordList": [
+	  "NSISEngine",
+	  "\"last_deallocated_obj\": \"NSISLinearExpression\"",
+	  "_layoutEngine_didAddLayoutConstraint"
+	],	
+	"param": {
+	  "classifyByController": true
+	},
+	"description":"iOS AutoLayout Internal Crash",
+	"canFix":false
+  },
+  {
+	"fileDirName": "22",
+	"keyWords": [
+	  "Possible zombie in call: -[_UISnapshotWindow _shouldAnimatePropertyWithKey:"
+	],	
+	"param": {
+	  "classifyByController": true
+	},
+	"description":"Possible zombie in call: -[_UISnapshotWindow _shouldAnimatePropertyWithKey:",
+	"canFix":false
+  },
+  {
+	"fileDirName": "19",
+	"keyWords": [
+	  "NSISEngine",
+	  "7.0"
+	],	
+	"param": {
+	  "classifyByController": true
+	},
+	"description":"iOS 7.0 AutoLayout",
+	"canFix":false
+  },
+  {
+	"fileDirName": "20",
+	"keyWords": [
+	  "_layoutEngine_",
+	  "7.0"
+	],	
+	"param": {
+	  "classifyByController": true
+	},
+	"description":"iOS 7.0 AutoLayout",
+	"canFix":false
+  },
+  {
+	"fileDirName": "23",
+	"keyWords": [
+	  "XPC API Misuse: Attempt to send a message expecting a reply to the wrong connection."
+	],	
+	"param": {
+	  "classifyByController": true
+	},
+	"description":"iOS XPC Bug: \"XPC API Misuse: Attempt to send a message expecting a reply to the wrong connection.\"",
+	"canFix":false
+  },
+  {
+	"fileDirName": "24",
+	"keyWords": [
+	  "Possible zombie in call: -[BrandKillViewController scrollViewDidScroll:UITableView (instance)]"
+	],	
+	"param": {
+	  "classifyByController": true
+	},
+	"description":"Possible zombie in call: -[BrandKillViewController scrollViewDidScroll:UITableView (instance)]",
+	"canFix":false
+  },
+  {
+	"fileDirName": "25",
+	"keyWords": [
+	  "[UIWindowLayer actionForKey:]"
+	],	
+	"param": {
+	  "classifyByController": true
+	},
+	"description":"UIKit bug: [UIWindowLayer actionForKey:]",
+	"canFix":false
+  },
+  {
+	"fileDirName": "26",
+	"keyWords": [
+	  "UIKeyboardImpl",
+	  "TextInput"
+	],	
+	"param": {
+	  "classifyByController": true
+	},
+	"description":"UIKit Keyboard Bug",
+	"canFix":false
+  },
+  {
+	"fileDirName": "27",
+	"keyWords": [
+	  "\"last_deallocated_obj\": \"JDAddressView\"",
+	  "UIScrollView",
+	  "WareInfoBViewController"
+	],	
+	"param": {
+	  "classifyByController": true
+	},
+	"description":"UIKit Keyboard Bug",
+	"canFix":false
+  },
+  {
+	"fileDirName": "28",
+	"keyWords": [
+	  "SBSetBadgeNumber",
+	  "applicationDidBecomeActive:",
+	  "xpc"
+	],	
+	"param": {
+	  "classifyByController": true
+	},
+	"description":"Set badge number XPC crash",
+	"canFix":false
+  },  {
+	"fileDirName": "29",
+	"keyWords": [
+	  "Freeing unallocated pointer"
+	],	
+	"param": {
+	  "classifyByController": true
+	},
+	"description":"Freeing unallocated pointer",
+	"canFix":false
+  },  {
+	"fileDirName": "30",
+	"keyWords": [
+	  "[UIPageViewController queuingScrollView:didBailoutOfScrollAndRevealedView:]",
+	  	"ZDMHomeViewController"
+	],	
+	"param": {
+	  "classifyByController": true
+	},
+	"description":"ZDMHomeViewController ScrollView",
+	"canFix":false
+  },  {
+	"fileDirName": "31",
+	"keyWords": [
+	  "\"CoreTelephony  "
+	],	
+	"param": {
+	  "classifyByController": true
+	},
+	"description":"CoreTelephony",
+	"canFix":false
+  },  {
+	"fileDirName": "32",
+	"keyWords": [
+	  "\"last_deallocated_obj\": \"UIWebView\"",
+	  "\"class\": \"UIWebView\""
+	],	
+	"param": {
+	  "classifyByController": true
+	},
+	"description":"UIWebView Premature dealloc",
+	"canFix":false
+  },  {
+	"fileDirName": "33",
+	"keyWords": [
+	  "WebCore",
+	  "llint_entry",
+	  "JSC::JIT"
+	],	
+	"param": {
+	  "classifyByController": true
+	},
+	"description":"JavaScriptCore",
+	"canFix":false
+  },  {
+	"fileDirName": "34",
+	"keyWords": [
+	  "0xbbadbeef"
+	],	
+	"param": {
+	  "classifyByController": true
+	},
+	"description":"0xbbadbeef",
+	"canFix":false
+  },  {
+	"fileDirName": "35",
+	"keyWords": [
+	  "UIText",
+	  "UIGesture",
+	  "UIWeb"
+	],	
+	"param": {
+	  "classifyByController": true
+	},
+	"description":"UIWeb text selection",
+	"canFix":false
+  },  {
+	"fileDirName": "36",
+	"keyWords": [
+	  "[UIWebOverflowScrollView setContentOffset:]"
+	],	
+	"param": {
+	  "classifyByController": true
+	},
+	"description":"[UIWebOverflowScrollView setContentOffset:]",
+	"canFix":false
+  },  {
+	"fileDirName": "37",
+	"keyWords": [
+	  "\"last_deallocated_obj\": \"GiftShoppingCartViewController\""
+	],	
+	"param": {
+	  "classifyByController": true
+	},
+	"description":"Premature deallocation of GiftShoppingCartViewController",
+	"canFix":false
+  },  {
+	"fileDirName": "38",
+	"keyWords": [
+	  "guideViewDidClicked:"
+	],	
+	"param": {
+	  "classifyByController": true
+	},
+	"description":"JDMobileChargeViewController guideViewDidClicked:",
+	"canFix":true
+  },  {
+	"fileDirName": "39",
+	"keyWords": [
+	  "SuggestView",
+	  "Cannot form weak reference to instance "
+	],	
+	"param": {
+	  "classifyByController": true
+	},
+	"description":"SuggestView premature deallocation",
+	"canFix":false
+  },  {
+	"fileDirName": "40",
+	"keyWords": [
+	  "NSXPCEncoder",
+	  "encodeWithCoder:"
+	],	
+	"param": {
+	  "classifyByController": true
+	},
+	"description":"XPC encodeWithCoder",
+	"canFix":false
+  },  {
+	"fileDirName": "41",
+	"keyWords": [
+	  "\"crashThreadSymbolList\": null",
+	  "\"notableAddress\": null"
+	],	
+	"param": {
+	  "classifyByController": true
+	},
+	"description":"C++ Code Crash",
+	"canFix":false
+  },  {
+	"fileDirName": "42",
+	"keyWords": [
+	  "Animat",
+	  "[UITextSelectionView viewAnimate:]",
+	  "run_animation_callbacks"
+	],	
+	"param": {
+	  "classifyByController": true
+	},
+	"description":"Main Page Animation (UITextSelectionView)",
+	"canFix":false
+  },  {
+	"fileDirName": "43",
+	"keyWords": [
+	  "\"last_deallocated_obj\": \"NSCache\""
+	],	
+	"param": {
+	  "classifyByController": true
+	},
+	"description":"NSCache premature deallocation",
+	"canFix":false
+  },  {
+	"fileDirName": "44",
+	"keyWords": [
+	  "xpc",
+	  "decodeObjectForKey:"
+	],	
+	"param": {
+	  "classifyByController": true
+	},
+	"description":"XPC decodeObjectForKey",
+	"canFix":false
+  },  {
+	"fileDirName": "45",
+	"keyWords": [
+	  "Possible zombie in call:"
+	],	
+	"param": {
+	  "classifyByController": true
+	},
+	"description":"Possible zombie",
+	"canFix":false
+  },  {
+	"fileDirName": "46",
+	"keyWords": [
+	  "Cannot form weak reference to instance",
+	  " of class UITableView. It is possible that"
+	],	
+	"param": {
+	  "classifyByController": true
+	},
+	"description":"Main Page UITableView Over-release",
+	"canFix":false
+  },  {
+	"fileDirName": "47",
+	"keyWords": [
+	  "Method cache corrupted"
+	],	
+	"param": {
+	  "classifyByController": true
+	},
+	"description":"ObjC Method cache corrupted",
+	"canFix":false
+  },  {
+	"fileDirName": "48",
+	"keyWords": [
+	  "CA::Layer::collect_animations_"
+	],	
+	"param": {
+	  "classifyByController": true
+	},
+	"description":"Main Page Animation (CA::Layer::collect_animations_)",
+	"canFix":false
+  },  {
+	"fileDirName": "49",
+	"keyWords": [
+	  "MultiplexerSource::perform()",
+	  "[NSURLConnection(Loader) _resourceLoadLoop:]"
+	],	
+	"param": {
+	  "classifyByController": true
+	},
+	"description":"NSURLConnection(Loader)",
+	"canFix":false
+  },  {
+	"fileDirName": "50",
+	"keyWords": [
+	  "\"last_deallocated_obj\": \"NSError\"",
+	  "\"system_version\": \"7"
+	],	
+	"param": {
+	  "classifyByController": true
+	},
+	"description":"iOS 7 NSError Premature Deallocation",
+	"canFix":false
+  },  {
+	"fileDirName": "51",
+	"keyWords": [
+	  "incorrect checksum for freed object - object was probably modified after being freed"
+	],	
+	"param": {
+	  "classifyByController": true
+	},
+	"description":"incorrect checksum for freed object - object was probably modified after being freed",
+	"canFix":false
+  },  {
+	"fileDirName": "52",
+	"keyWords": [
+	  "accessing _cachedSystemAnimationFence requires the main thread"
+	],	
+	"param": {
+	  "classifyByController": true
+	},
+	"description":"accessing _cachedSystemAnimationFence requires the main thread",
+	"canFix":false
+  },  {
+	"fileDirName": "53",
+	"keyWords": [
+	  "\"last_deallocated_obj\": \"JIMIMWebViewController\""
+	],	
+	"param": {
+	  "classifyByController": true
+	},
+	"description":"JIMIMWebViewController Premature Deallocation",
+	"canFix":false
+  },  {
+	"fileDirName": "54",
+	"keyWords": [
+	  "[QBWebView dealloc]"
+	],	
+	"param": {
+	  "classifyByController": true
+	},
+	"description":"[QBWebView dealloc]",
+	"canFix":false
+  },  {
+	"fileDirName": "55",
+	"keyWords": [
+	  "isDescendantOfView:]: unrecognized selector sent to instance"
+	],	
+	"param": {
+	  "classifyByController": true
+	},
+	"description":"isDescendantOfView:]: unrecognized selector sent to instance",
+	"canFix":false
+  },  {
+	"fileDirName": "56",
+	"keyWords": [
+	  "-[UITextInteractionAssistant"
+	],	
+	"param": {
+	  "classifyByController": true
+	},
+	"description":"-[UITextInteractionAssistant",
+	"canFix":false
+  },  {
+	"fileDirName": "57",
+	"keyWordList": [
+	  "CFBasicHashAddValue",
+	  "CFURL"
+	],	
+	"param": {
+	  "classifyByController": true
+	},
+	"description":"CFURL",
+	"canFix":false
+  },  {
+	"fileDirName": "58",
+	"keyWords": [
+	  "PeekaBoo.dylib"
+	],	
+	"param": {
+	  "classifyByController": true
+	},
+	"description":"PeekaBoo.dylib (Jailbreak)",
+	"canFix":false
+  },  {
+	"fileDirName": "59",
+	"keyWords": [
+	  "peoplePickerNavigationControllerDidCancel:]: unrecognized selector sent to instance"
+	],	
+	"param": {
+	  "classifyByController": true
+	},
+	"description":"peoplePickerNavigationControllerDidCancel:]: unrecognized selector sent to instance",
+	"canFix":false
+  },  {
+	"fileDirName": "60",
+	"keyWords": [
+	  "unrecognized selector sent to instance"
+	],	
+	"param": {
+	  "classifyByController": true
+	},
+	"description":"unrecognized selector sent to instance",
+	"canFix":false
+  },  {
+	"fileDirName": "61",
+	"keyWordList": [
+	  "_ServerConnectionCallback(__CTServerConnection",
+	  "___CTServerConnectionRegisterForEvent_block_invoke"
+	],	
+	"param": {
+	  "classifyByController": true
+	},
+	"description":"CoreTelephony Crash",
+	"canFix":false
+  },  {
+	"fileDirName": "62",
+	"keyWords": [
+	  "[UIScrollView(UIScrollViewInternal) _delegateScrollViewAnimationEnded]"
+	],	
+	"param": {
+	  "classifyByController": true
+	},
+	"description":"UIScrollView/UITableView zombie delegate",
+	"canFix":false
+  },  {
+	"fileDirName": "63",
+	"keyWords": [
+	  "updateSubviewsOfScrollContentViews",
+	  "UIWebBrowserView"
+	],	
+	"param": {
+	  "classifyByController": true
+	},
+	"description":"UIWebBrowserView / updateSubviewsOfScrollContentViews",
+	"canFix":false
+  },  {
+	"fileDirName": "64",
+	"keyWords": [
+	  "SIGPIPE"
+	],	
+	"param": {
+	  "classifyByController": true
+	},
+	"description":"SIGPIPE",
+	"canFix":false
+  },{
+    "fileDirName": "65",
+    "keyWords": [
+      "\"exception_name\": \"EXC_CRASH\"",
+      "CA::OGL::MetalContext::MetalContext",
+      "CA::CG::IOSurfaceRenderer::acquire"
+    ],
+    "description":"CA::OGL::MetalContext::MetalContext",
+    "canFix":true
+  },{
+    "fileDirName": "66",
+    "keyWords": [
+      "-[UIMotionEvent _enablePeakDetectionIfNecessary]"
+    ],
+    "description":"-[UIMotionEvent _enablePeakDetectionIfNecessary]",
+    "canFix":true
+  },{
+    "fileDirName": "67",
+    "keyWords": [
+      "gldCreateVertexArray (in libGPUSupportMercury.dylib"
+    ],
+    "description":"gldCreateVertexArray (in libGPUSupportMercury.dylib",
+    "canFix":true
+  },
+  {
+	"fileDirName": "4",
+	"keyWord": "[UICollectionView _unhighlightAllItems]",
+	"description":"it is test",
+	"canFix":false
+  }
+]
