@@ -11,11 +11,33 @@ import shutil
 
 import baseEx
 
+# 返回主用户目录
+def getHomeDirPath():
+    ret = os.environ["HOME"]
+    if baseEx.validateString(ret):
+        return ret
+    ret = os.path.expandvars("$HOME")
+    if baseEx.validateString(ret):
+        return ret
+    ret = os.path.expanduser("~")
+    if baseEx.validateString(ret):
+        return ret
+    return ""
+
+# 返回转化后的目录
+def getAbsolutePath(filePath):
+    if not baseEx.validateString(filePath):
+        return None
+    if filePath[0:2] == "~/":
+        return getHomeDirPath() + filePath[1:]
+    else:
+        return filePath
 
 # 安全的获取指定文件内的content,返回str。出错则返回None
 def safeGetFileContentStr(fileName, isNeedPrint = False):
     if not baseEx.validateString(fileName):
         return None
+    fileName = getAbsolutePath(fileName)
     if not os.path.isfile(fileName):
         return None
     try:
@@ -57,6 +79,7 @@ def safeWriteFileContentStr(fileName, content, isNeedPrint = False):
     ret = True
     if not baseEx.validateString(content):
         return False
+    fileName = getAbsolutePath(fileName)
 
     try:
         writerFileFP = open(fileName, "w")
@@ -99,6 +122,7 @@ def safeClearDir(dirPath):
     if not baseEx.validateString(dirPath):
         return False
     else:
+        dirPath = getAbsolutePath(dirPath)
         if os.path.isdir(dirPath):
             shutil.rmtree(dirPath)
         try:
@@ -113,6 +137,7 @@ def safeCreateDir(dirPath):
     if not baseEx.validateString(dirPath):
         return False
     else:
+        dirPath = getAbsolutePath(dirPath)
         if os.path.isdir(dirPath):
             return False
         try:
@@ -125,6 +150,7 @@ def safeCreateDir(dirPath):
 def safeRemovePath(path):
     if not baseEx.validateString(path):
         return False
+    path = getAbsolutePath(path)
     if os.path.isfile(path):
         os.remove(path)
         return True
@@ -135,6 +161,9 @@ def safeRemovePath(path):
 
 
 def fileDirIsEmpty(sourceDir):
+    if not baseEx.validateString(sourceDir):
+        return False
+    sourceDir = getAbsolutePath(sourceDir)
     if not os.path.isdir(sourceDir):
         return False
     fileList = os.listdir(sourceDir)
@@ -149,6 +178,8 @@ def fileDirIsEmpty(sourceDir):
 def safeMoveDir(sourceDir, targetDir):
     if not baseEx.validateString(sourceDir) or not baseEx.validateString(targetDir):
         return False
+    sourceDir = getAbsolutePath(sourceDir)
+    targetDir = getAbsolutePath(targetDir)
     if not os.path.isdir(sourceDir):
         return False
     if not os.path.exists(targetDir) or (os.path.isdir(targetDir) and fileDirIsEmpty(targetDir)):
@@ -165,6 +196,8 @@ def safeMoveDir(sourceDir, targetDir):
 def safeMoveFile(sourceFile, targetFile):
     if not baseEx.validateString(sourceFile) or not baseEx.validateString(targetFile):
         return False
+    sourceFile = getAbsolutePath(sourceFile)
+    targetFile = getAbsolutePath(targetFile)
     if not os.path.isfile(sourceFile):
         return False
     if os.path.isdir(targetFile):
@@ -181,6 +214,8 @@ def safeMoveFile(sourceFile, targetFile):
 def mergeDirToDst(sourceDir, targetDir):
     if not baseEx.validateString(sourceDir) or not baseEx.validateString(targetDir):
         return False
+    sourceDir = getAbsolutePath(sourceDir)
+    targetDir = getAbsolutePath(targetDir)
     if not os.path.isdir(sourceDir):
         return False
     if os.path.isfile(targetDir):
@@ -200,6 +235,8 @@ def mergeDirToDst(sourceDir, targetDir):
 def safeCopyFile(sourceFile, targetFile):
     if not baseEx.validateString(sourceFile) or not baseEx.validateString(targetFile):
         return False
+    sourceFile = getAbsolutePath(sourceFile)
+    targetFile = getAbsolutePath(targetFile)
     if not os.path.isfile(sourceFile):
         return False
     if os.path.isdir(targetFile):
@@ -215,6 +252,8 @@ def safeCopyFile(sourceFile, targetFile):
 def safeCopyFileToDir(sourceFile, targetDir):
     if not baseEx.validateString(sourceFile) or not baseEx.validateString(targetDir):
         return False
+    sourceFile = getAbsolutePath(sourceFile)
+    targetDir = getAbsolutePath(targetDir)
     if not os.path.isfile(sourceFile):
         return False
     if not os.path.isdir(targetDir):
@@ -230,6 +269,8 @@ def safeCopyFileToDir(sourceFile, targetDir):
 def safeCopyDirToNewDir(sourceDir, targetDir):
     if not baseEx.validateString(sourceDir) or not baseEx.validateString(targetDir):
         return False
+    sourceDir = getAbsolutePath(sourceDir)
+    targetDir = getAbsolutePath(targetDir)
     if not os.path.exists(sourceDir):
         return False
     if os.path.exists(targetDir):
@@ -246,6 +287,8 @@ def safeCopyDirToNewDir(sourceDir, targetDir):
 def safeCopyDirToDir(sourceDir, targetDir):
     if not baseEx.validateString(sourceDir) or not baseEx.validateString(targetDir):
         return False
+    sourceDir = getAbsolutePath(sourceDir)
+    targetDir = getAbsolutePath(targetDir)
     if not os.path.exists(sourceDir):
         return False
     if os.path.isfile(targetDir):
@@ -260,7 +303,7 @@ def safeCopyDirToDir(sourceDir, targetDir):
 
 
 # 创建软链接文件,文件和文件夹通用
-# 覆盖性写入
+# 覆盖性写入,目前仅建议相对路径创建
 def safeSymbolLink(src, dst, isNeedCover = True):
     # 由于这里的路径必须是dst所在文件夹为基准的相对路径,所以不具备参考价值
     # if not os.path.exists(src):
@@ -278,6 +321,7 @@ def safeSymbolLink(src, dst, isNeedCover = True):
 def getAllDirsInSpecialDir(specifyDirName, needPathName = False, needHideElement = True):
     if not baseEx.validateString(specifyDirName):
         return None
+    specifyDirName = getAbsolutePath(specifyDirName)
     if not os.path.isdir(specifyDirName):
         return None
     resultList = []
@@ -297,6 +341,7 @@ def getAllDirsInSpecialDir(specifyDirName, needPathName = False, needHideElement
 def getAllFilesInSpecialDir(specifyDirName, needPathName = False, needHideElement = True):
     if not baseEx.validateString(specifyDirName):
         return None
+    specifyDirName = getAbsolutePath(specifyDirName)
     if not os.path.isdir(specifyDirName):
         return None
     resultList = []
@@ -315,6 +360,7 @@ def getAllFilesInSpecialDir(specifyDirName, needPathName = False, needHideElemen
 def recursionGetAllDirInSpecialDir(specifyDirName, needPathName = False, needHideElement = True):
     if not baseEx.validateString(specifyDirName):
         return None
+    specifyDirName = getAbsolutePath(specifyDirName)
     if not os.path.isdir(specifyDirName):
         return None
     resultList = []
@@ -335,6 +381,7 @@ def recursionGetAllDirInSpecialDir(specifyDirName, needPathName = False, needHid
 def recursionGetSpecialFilesInSpecialDir(specifyDirName, formatStr, needPathName = False, needHideElement = True):
     if not baseEx.validateString(specifyDirName):
         return None
+    specifyDirName = getAbsolutePath(specifyDirName)
     if not os.path.isdir(specifyDirName):
         return None
     subDirResultList = recursionGetAllDirInSpecialDir(specifyDirName, True)

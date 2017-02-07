@@ -700,7 +700,7 @@ else:
     target_iPad_build_short_version = "3.9.0"
     target_iPad_build_version = "8050"
     target_input_filedir = "../testtest/iPad_390_1125"
-    target_dsym_fileName = "xxipad"
+    target_dsym_fileName = "xxxiPhone"
     target_grayScale_flag = ""
     target_need_cache = True
 

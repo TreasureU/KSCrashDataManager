@@ -6,9 +6,9 @@
 
 """
 说明区:
-	请使用命令: python xxipadCrashParser.py <iPad/iPhone> <sourceDir> [appendName]
+	请使用命令: python JDiPadCrashParser.py <iPad/iPhone> <sourceDir> [appendName]
 	脚本将自动解析指定目录下的 source/*.json 文件,请将 KCrash上报的数据放置在里面.
-	<appendName> 表示输出文件附加命名,输出文件格式名为: xxipadCrashPaser_20xx_xx_xx_<appendName>.xlsx
+	<appendName> 表示输出文件附加命名,输出文件格式名为: JDiPadCrashPaser_20xx_xx_xx_<appendName>.xlsx
 	默认只解析 instruction_addr,如果需要同时解析 symbol_addr ,请将 target_need_symbol 常量置为 True
 	如果需要调试代码,直接使用 cmd+R 运行,需要将 target_debug_flag 置为 True
 """
@@ -23,13 +23,13 @@ target_debug_flag = False
 
 # symbol file path
 target_symbol_file = None
-global_symbol_ipad_file = "../SourceSymbol/xxipad/xxipad"
-global_symbol_iphone_file = "../SourceSymbol/xxxiPhone/xxxiPhone"
+global_symbol_ipad_file = "../SourceSymbol/Jdipad/Jdipad"
+global_symbol_iphone_file = "../SourceSymbol/JD4iPhone/JD4iPhone"
 
 # app运行名
 target_app_run_name = None
-global_appName_ipad = "xxipad"
-global_appName_iphone = "xxxiPhone"
+global_appName_ipad = "Jdipad"
+global_appName_iphone = "JD4iPhone"
 
 # 需要同时解析symbol
 target_need_symbol = False
@@ -99,7 +99,7 @@ if not target_debug_flag:
         if len(sys.argv) >= 4:
             target_append_name = sys.argv[3]
     else:
-        print "Error: Please use cmd like : python xxipadCrashParser.py <iPad/iPhone> sourceFileDir <appendName>"
+        print "Error: Please use cmd like : python JDiPadCrashParser.py <iPad/iPhone> sourceFileDir <appendName>"
         sys.exit(-1)
 else:
     target_symbol_file = global_symbol_ipad_file

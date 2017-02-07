@@ -212,6 +212,31 @@
 	"canFix":false
   },
   {
+	"fileDirName": "UIKit Keyboard Bug2",
+	"keyWords": [
+	  "UIKeyboardImpl",
+	  "TextInput"
+	],	
+	"param": {
+	  "classifyByController": true
+	},
+	"description":"UIKit Keyboard Bug2",
+	"canFix":false
+  },
+  {
+	"fileDirName": "UIKit Keyboard Bug1",
+	"keyWords": [
+	  "\"last_deallocated_obj\": \"JDAddressView\"",
+	  "UIScrollView",
+	  "WareInfoBViewController"
+	],	
+	"param": {
+	  "classifyByController": true
+	},
+	"description":"UIKit Keyboard Bug1",
+	"canFix":false
+  },
+  {
 	"fileDirName": "Set_badge_number_XPC_crash",
 	"keyWords": [
 	  "SBSetBadgeNumber",
@@ -395,33 +420,7 @@
 	},
 	"description":"NSURLConnection(Loader)",
 	"canFix":false
-  },
-  {
-	"fileDirName": "UIKit Keyboard Bug1",
-	"keyWords": [
-	  "\"last_deallocated_obj\": \"JDAddressView\"",
-	  "UIScrollView",
-	  "WareInfoBViewController"
-	],	
-	"param": {
-	  "classifyByController": true
-	},
-	"description":"UIKit Keyboard Bug1",
-	"canFix":false
-  }, 
-  {
-	"fileDirName": "UIKit Keyboard Bug2",
-	"keyWords": [
-	  "UIKeyboardImpl",
-	  "TextInput"
-	],	
-	"param": {
-	  "classifyByController": true
-	},
-	"description":"UIKit Keyboard Bug2",
-	"canFix":false
-  }, 
-  {
+  },  {
 	"fileDirName": "iOS_7_NSError_Premature_Deallocation",
 	"keyWords": [
 	  "\"last_deallocated_obj\": \"NSError\"",
@@ -514,6 +513,16 @@
 	"description":"peoplePickerNavigationControllerDidCancel:]: unrecognized selector sent to instance",
 	"canFix":false
   },  {
+	"fileDirName": "unrecognized_selector",
+	"keyWords": [
+	  "unrecognized selector sent to instance"
+	],	
+	"param": {
+	  "classifyByController": true
+	},
+	"description":"unrecognized selector sent to instance",
+	"canFix":true
+  },  {
 	"fileDirName": "CoreTelephony_Crash",
 	"keyWordList": [
 	  "_ServerConnectionCallback(__CTServerConnection",
@@ -575,7 +584,8 @@
 	"fileDirName": "forwardTouchMethod",
 	"keyWords": [
 	  "-[UIStatusBar touchesEnded:withEvent:]",
-	  "forwardTouchMethod"
+	  "forwardTouchMethod",
+	  "Attempted to dereference garbage pointer"
 	],	
 	"param": {
 	  "classifyByController": true
@@ -593,43 +603,6 @@
 	  "classifyByController": true
 	},
 	"description":"DOMRangeException",
-	"canFix":true
-  },
-  {
-	"fileDirName": "Autorelease zombie NSIndexPath",
-	"keyWords": [
-	  "Possible zombie in call: -[NSIndexPath release]",
-	  "_UICollectionViewItemKey",
-	  "_CFAutoreleasePoolPop"
-	],	
-	"param": {
-	  "classifyByController": true
-	},
-	"description":"when Autorelease NSIndexPath is zombie",
-	"canFix":true
-  },
-  {
-	"fileDirName": "ScrolView delegate zombie in Animation",
-	"keyWords": [
-	  "-[UIScrollView(UIScrollViewInternal) _notifyDidScroll]",
-	  "EXC_BAD_ACCESS",
-	  "-[UIScrollView setContentOffset:]"
-	],	
-	"param": {
-	  "classifyByController": true
-	},
-	"description":"ScrolView delegate zombie in Animation",
-	"canFix":true
-  },
-  {
-	"fileDirName": "GPSTravellerTweak360",
-	"keyWords": [
-	  "GPSTravellerTweak360.dylib"
-	],	
-	"param": {
-	  "classifyByController": true
-	},
-	"description":"GPSTravellerTweak360",
 	"canFix":true
   }
 ]

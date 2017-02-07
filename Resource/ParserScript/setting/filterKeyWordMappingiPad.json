@@ -1,14 +1,5 @@
 [
    {
-	"fileDirName": "pre_all_fup",
-	"keyWords": [
-	  "SIGABRT",
-	  "_nano_vet_and_size_of_live",
-	  "system_version\": \"10"
-	],
-	"description":"FUP (All_Fup)",
-	"canFix":false
-  },{
 	"fileDirName": "pre_sql",
 	"keyWords": [
 	  "SIGABRT",
@@ -48,7 +39,17 @@
 	],	
 	"description":"FUP (iOS10.X)(CF common_removeAllObjects)",
 	"canFix":false
-  },{
+  },  {
+	"fileDirName": "pre_3",
+	"keyWords": [
+	  "SIGABRT",
+	  "_nano_vet_and_size_of_live",
+	  "system_version\": \"10",
+	  "common_removeAllObjects"
+	],	
+	"description":"FUP (iOS10.X)(CF common_removeAllObjects)",
+	"canFix":false
+  },  {
 	"fileDirName": "pre_4",
 	"keyWords": [
 	  "SIGABRT",

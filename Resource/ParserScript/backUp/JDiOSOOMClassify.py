@@ -70,7 +70,7 @@ if not target_debug_flag:
             print "Error: OOMDir is error. Please use : AT/BG/FG/IA/None"
             sys.exit(-1)
     else:
-        print "Error: need origin fileDir Param. Please use : python xxipadCrashParser.py <fileDir>"
+        print "Error: need origin fileDir Param. Please use : python JDiPadCrashParser.py <fileDir>"
         sys.exit(-1)
 else:
     target_device_type = "iPhone"

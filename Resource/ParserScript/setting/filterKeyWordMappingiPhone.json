@@ -1,5 +1,78 @@
 [  
-	{
+		{
+	"fileDirName": "sslCreateSecTrust",
+	"keyWords": [
+	  "sslCreateSecTrust",
+	  "tls_verify_peer_cert"
+	],	
+	"param": {
+	  "classifyByController": true
+	},
+	"description":"sslCreateSecTrust",
+	"canFix":false
+  },{
+	"fileDirName": "_platform_memmove",
+	"keyWords": [
+	  "_platform_memmove",
+	  "IMGSGX543RC2GLDriver"
+	],	
+	"param": {
+	  "classifyByController": true
+	},
+	"description":"pre__platform_memmove IMGSGX543RC2GLDriver",
+	"canFix":false
+  },{
+	"fileDirName": "UITraitCollection",
+	"keyWords": [
+	  "last_deallocated_obj\": \"UITraitCollection\", \n                \"type\": \"unknown"
+	],	
+	"param": {
+	  "classifyByController": true
+	},
+	"description":"pre_UITraitCollection",
+	"canFix":false
+  },{
+	"fileDirName": "WebView(WebPrivate)_garbageCollectNow",
+	"keyWords": [
+	  "+[WebView(WebPrivate) garbageCollectNow]"
+	],	
+	"param": {
+	  "classifyByController": true
+	},
+	"description":"pre_[WebView(WebPrivate) garbageCollectNow]",
+	"canFix":false
+  },{
+	"fileDirName": "WebCore_MediaPlayerPrivateAVFoundationObjC",
+	"keyWords": [
+	  "WebCore::InbandMetadataTextTrackPrivateAVF",
+	  "WebCore::MediaPlayerPrivateAVFoundationObjC"
+	],	
+	"param": {
+	  "classifyByController": true
+	},
+	"description":"pre_WebCore_MediaPlayerPrivateAVFoundationObjC",
+	"canFix":false
+  },{
+	"fileDirName": "CUINamedImage",
+	"keyWords": [
+	  "last_deallocated_obj\": \"CUINamedImage\", \n                \"type\": \"unknown"
+	],	
+	"param": {
+	  "classifyByController": true
+	},
+	"description":"pre_CUINamedImage",
+	"canFix":false
+  },{
+	"fileDirName": "NSCachedURLResponse",
+	"keyWords": [
+	  "last_deallocated_obj\": \"NSCachedURLResponse\", \n                \"type\": \"unknown"
+	],	
+	"param": {
+	  "classifyByController": true
+	},
+	"description":"pre_NSCachedURLResponse",
+	"canFix":false
+  },{
 	"fileDirName": "MediaPlayer",
 	"keyWords": [
 	  "MediaPlayer  0x",
@@ -25,6 +98,16 @@
 	  "NSAllocateMemoryPages"
 	],	
 	"description":"pre_NSAllocateMemoryPages",
+	"canFix":false
+  },{
+	"fileDirName": "CSSearchableIndex",
+	"keyWords": [
+	  "CSSearchableIndex indexSearchableItems:deleteSearchableItemsWithIdentifiers:clientState:clientStateName:protectionClass:forBundleID:options:completionHandler:"
+	],	
+	"param": {
+	  "classifyByController": true
+	},
+	"description":"pre__CSSearchableIndex",
 	"canFix":false
   },
    {

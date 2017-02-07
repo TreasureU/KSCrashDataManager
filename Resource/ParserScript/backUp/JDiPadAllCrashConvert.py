@@ -7,7 +7,7 @@
 """
 说明区:
 	注意,本文件暂未兼容iPhone,且不再更新与维护。
-	请使用命令: python xxipadAllCrashConvert.py <fileDir>
+	请使用命令: python JDiPadAllCrashConvert.py <fileDir>
 	脚本将自动解析同一目录下的 *.json 文件,请将 KCrash上报的数据放置在里面.
 	默认只解析 instruction_addr,如果需要同时解析 symbol_addr ,请将 target_need_symbol 常量置为 True .
 	脚本执行所在目录默认为脚本所在目录,注意文件夹位置关系。
@@ -27,7 +27,7 @@ target_debug_flag = False
 target_need_symbol = False
 
 # app运行名
-target_app_run_name = "xxipad"
+target_app_run_name = "Jdipad"
 
 # 合法架构symbol文件
 target_symbol_fileDict = {}
@@ -81,7 +81,7 @@ def toValidateArchiver(archiver, isLocalSymbol):
 def initSymbolFileMapping():
     global target_symbol_fileDict
     target_symbol_fileDict = {}
-    target_symbol_fileDict[target_app_run_name] = "../SourceSymbol/xxipad/xxipad"
+    target_symbol_fileDict[target_app_run_name] = "../SourceSymbol/Jdipad/Jdipad"
     fileDirTuple = ("arm64", "armv7", "armv7s")
     for archiver in fileDirTuple:
         fileDict = {}
@@ -227,7 +227,7 @@ if not target_debug_flag:
     if len(sys.argv) >= 2:
         target_input_filedir = sys.argv[1]
     else:
-        print "Error: need origin fileDir Param. Please use : python xxipadCrashParser.py <fileDir>"
+        print "Error: need origin fileDir Param. Please use : python JDiPadCrashParser.py <fileDir>"
         sys.exit(-1)
 else:
     target_input_filedir = "../2016_07_01_13_35_52_674"
@@ -306,7 +306,7 @@ for inputFile in crashFileList:
         for imageObj in allImgLoadAddress:
             image_name = ParserScript.CJFKit.safeGetDicElement(imageObj, "name")
             if ParserScript.CJFKit.validateString(image_name):
-                if image_name.endswith("/xxipad"):
+                if image_name.endswith("/Jdipad"):
                     selfImageAddress = ParserScript.CJFKit.safeGetDicElement(imageObj, "image_addr")
                     selfImageAddress = "0x%x" % (int(selfImageAddress))
                 elif image_name.endswith("/UIKit"):

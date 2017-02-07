@@ -15,24 +15,13 @@
 """
 
 import glob
-import logging
 import os
-import sys
-import traceback
-from multiprocessing import Manager
 
 import CJFKit
 
-
-# 多线程相关变量
-manager = Manager()
-vagueMappingDict = manager.dict()
-
 # --------------------   全局配置区  -----------------------
 
-global_dir_name = "../iPad_390_1125"
-global_file_ext_list = ["PNG", "JPG", "JPEG"]
-global_debug_switch = False
+
 
 
 # --------------------   全局函数去  -----------------------
@@ -103,41 +92,44 @@ def isVerifyExt(ext):
     global global_file_ext_list
 
 
-def testtest():
-    testest1()
+# 返回主用户目录
+def getHomeDirPath():
+    ret = os.environ["HOME"]
+    if validateString(ret):
+        return ret
+    ret = os.path.expandvars("$HOME")
+    if validateString(ret):
+        return ret
+    ret = os.path.expanduser("~")
+    if validateString(ret):
+        return ret
+    return ""
 
-
-def testest1():
-    global aaaa
-    print aaaa
-
-
-def div(a, b):
-    try:
-        print(a / b)
-    except (ZeroDivisionError, TypeError) as e:
-        print("Error: b should not be 0 !!")
-        print type(e)
-    except Exception as e:
-        print("Unexpected Error: {}".format(e))
-        # print type(e)
+# 返回转化后的目录
+def getAbsolutePath(filePath):
+    if not validateString(filePath):
+        return None
+    if filePath[0:2] == "~/":
+        return getHomeDirPath() + filePath[1:]
     else:
-        print('Run into else only when everything goes well')
-    finally:
-        print('Always run into finally block.')
+        return filePath
 
 
 # --------------------   正式代码区   -----------------------
 
-str1 = CJFKit.safeGetFileContentStr("../iPad_390_1125/source/0d775177a5a1709008278cda60d4737ba2068a4d_OPTRHEGM.json")
-str2 = CJFKit.safeGetFileContentStr("../iPad_390_1125/source/0d775177a5a1709008278cda60d4737ba2068a4d_OPTRHEGM.json")
-str3 = CJFKit.safeGetFileContentStr("../iPad_390_1125/source/1c14c1696282277c7bbcb7b5ad5e62e6cc062439_YHIEQNFK.json")
-if str1 == str2:
-    print "str1 == str2:equal"
-else:
-    print "str1 == str2:not equal"
+print os.environ["HOME"]
+print os.path.expandvars("$HOME")
+print os.path.expanduser("~")
 
-if str1 == str3:
-    print "str1 == str3:equal"
-else:
-    print "str1 == str3:not equal"
+print type(os.environ["HOME"])
+print type(os.path.expandvars("$HOME"))
+print type(os.path.expanduser("~"))
+
+search_path = "~/Library/Developer/Xcode/iOS DeviceSupport"
+if search_path[0:2] == "~/":
+    search_path = os.environ["HOME"] + search_path[1:]
+print search_path
+
+lists = CJFKit.recursionGetAllDirInSpecialDir(search_path)
+print lists
+

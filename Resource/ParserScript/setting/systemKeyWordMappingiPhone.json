@@ -725,6 +725,34 @@
     ],
     "description":"gldCreateVertexArray (in libGPUSupportMercury.dylib",
     "canFix":true
+  },{
+    "fileDirName": "68",
+    "keyWords": [
+      "SDWebImageDownloaderOperation",
+      "cancelInternalAndStop"
+    ],
+    "description":"SDWebImageDownloaderOperation cancelInternalAndStop",
+    "canFix":true
+  },{
+    "fileDirName": "69",
+    "keyWords": [
+      "> was mutated while being enumerated.",
+      "NSGenericException",
+      "[UIView(Hierarchy) subviews] (in UIKit_10"
+    ],
+    "description":"[UIView(Hierarchy) subviews](iOS 10)",
+    "canFix":true
+  },  {
+	"fileDirName": "70",
+	"keyWords": [
+	  "SIGSYS",
+	  "\"system_version\": \"7"
+	],	
+	"param": {
+	  "classifyByController": true
+	},
+	"description":"iOS 7 SIGSYS",
+	"canFix":false
   },
   {
 	"fileDirName": "4",
