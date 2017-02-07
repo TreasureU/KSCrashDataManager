@@ -11,7 +11,7 @@
     脚本执行所在目录默认为脚本所在目录,注意文件夹位置关系。
     如果需要调试代码,直接使用 cmd+R 运行,需要将 target_debug_flag 置为 True
     归类依据:
-        1.先判断 crashThread 中有无归属于 jdipad 的类信息,有的话,那么就按照这个输出分配。
+        1.先判断 crashThread 中有无归属于 xxipad 的类信息,有的话,那么就按照这个输出分配。
         2.再判断 userInfo 中的最后一个页面归属于何方
         3.输出整体报表.
     注意:在 not_sort 中也会包含 crash_controller 的信息,但不参与计数工作
@@ -35,8 +35,8 @@ target_remove_bg = True
 # 后台筛选时间
 target_bg_limit = 10.0
 
-global_iPad_name = "Jdipad"
-global_iPhone_name = "JD4iPhone"
+global_iPad_name = "xxipad"
+global_iPhone_name = "xxxiPhone"
 
 global_keyword_iPad_fileName = "./setting/filterKeyWordMappingiPad.json"
 global_keyword_iPhone_fileName = "./setting/filterKeyWordMappingiPhone.json"
@@ -143,7 +143,7 @@ if not target_debug_flag:
             target_crash_keyword_mapping_fileName = global_keyword_iPad_fileName
         target_input_filedir = sys.argv[2]
     else:
-        print "Error: need origin fileDir Param. Please use : python JDiPadCrashParser.py <fileDir>"
+        print "Error: need origin fileDir Param. Please use : python xxipadCrashParser.py <fileDir>"
         sys.exit(-1)
 else:
     target_name = global_iPad_name

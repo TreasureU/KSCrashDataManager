@@ -24,8 +24,8 @@ import CJFKit
 # 全局调试宏
 target_debug_flag = False
 
-global_iPad_name = "Jdipad"
-global_iPone_name = "JD4iPhone"
+global_iPad_name = "xxipad"
+global_iPone_name = "xxxiPhone"
 
 # 设备输出表列表字段索引
 crashThreadIndexIndex = 0           # 崩溃线程索引
@@ -248,7 +248,7 @@ if __name__ == "__main__":
             for index in range(2, len(sys.argv)):
                 target_input_filedir_list.append(sys.argv[index])
         else:
-            print "Error: need origin fileDir Param. Please use : python JDiPadCrashParser.py <fileDir,...>"
+            print "Error: need origin fileDir Param. Please use : python xxipadCrashParser.py <fileDir,...>"
             sys.exit(-1)
     else:
         target_name = global_iPad_name

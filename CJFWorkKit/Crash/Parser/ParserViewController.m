@@ -58,9 +58,9 @@
             if( validateString(path) ){
                 if ([[path substringToIndex:1] isEqualToString:@"."]) {
                     continue;
-                }else if( [path containsString:@"JD4iPhone"] ){
+                }else if( [path containsString:@"xxxiPhone"] ){
                     [self.iPhoneDsymFiles addObject:path];
-                }else if( [path containsString:@"Jdipad"] ){
+                }else if( [path containsString:@"xxipad"] ){
                     [self.iPadDsymFiles addObject:path];
                 }
             }

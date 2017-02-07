@@ -59,10 +59,10 @@ static NSString* const cjf_init_environment_value = @"20170113_1331";
     //重建脚本文件
     //backUp
     copyBundleFileToDocument(@"JDiOSOOMClassify", @"py", @"ParserScript/backUp");
-    copyBundleFileToDocument(@"JDiPadAllCrashClassify", @"py", @"ParserScript/backUp");
-    copyBundleFileToDocument(@"JDiPadAllCrashConvert", @"py", @"ParserScript/backUp");
-    copyBundleFileToDocument(@"JDiPadAllCrashParser", @"py", @"ParserScript/backUp");
-    copyBundleFileToDocument(@"JDiPadOneCrashLogParse", @"py", @"ParserScript/backUp");
+    copyBundleFileToDocument(@"xxipadAllCrashClassify", @"py", @"ParserScript/backUp");
+    copyBundleFileToDocument(@"xxipadAllCrashConvert", @"py", @"ParserScript/backUp");
+    copyBundleFileToDocument(@"xxipadAllCrashParser", @"py", @"ParserScript/backUp");
+    copyBundleFileToDocument(@"xxipadOneCrashLogParse", @"py", @"ParserScript/backUp");
     
     //cache
     copyBundleFileToDocument(@"systemCache", @"", @"ParserScript/cache");

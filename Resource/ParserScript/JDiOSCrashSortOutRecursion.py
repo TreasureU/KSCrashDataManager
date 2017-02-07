@@ -73,7 +73,7 @@ if not target_debug_flag:
             target_crash_keyword_mapping_fileName = global_crash_keyword_mapping_iPadfileName
         target_input_filedir = sys.argv[2]
     else:
-        print "Error: need origin fileDir Param. Please use : python JDiPadCrashParser.py <fileDir>"
+        print "Error: need origin fileDir Param. Please use : python xxipadCrashParser.py <fileDir>"
         sys.exit(-1)
 else:
     target_crash_keyword_mapping_fileName = global_crash_keyword_mapping_iPadfileName

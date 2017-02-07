@@ -25,7 +25,7 @@
 -(void)resetState
 {
     self.filePath = nil;
-    self.tipLabel.stringValue = @"请将文件拖入这个窗口的任意位置，然后松开鼠标......\n拖入文件后，请填写build、version和简短描述、设备类型，最后点击导入，会自动为文件生成[JD4iPhone/Jdipad]_[version]_[build]_[简短描述]，如果导入时命名冲突，那么会导致导入失败，请更正命名后重新导入。如果决定文件过多，可以点击打开目录，删除部分文件，但请不要直接自己对文件做拖入操作，确保命名符合规范，以免日后脚本不兼容。";
+    self.tipLabel.stringValue = @"请将文件拖入这个窗口的任意位置，然后松开鼠标......\n拖入文件后，请填写build、version和简短描述、设备类型，最后点击导入，会自动为文件生成[xxxiPhone/xxipad]_[version]_[build]_[简短描述]，如果导入时命名冲突，那么会导致导入失败，请更正命名后重新导入。如果决定文件过多，可以点击打开目录，删除部分文件，但请不要直接自己对文件做拖入操作，确保命名符合规范，以免日后脚本不兼容。";
     self.buildTF.stringValue = @"";
     self.versionTF.stringValue = @"";
     self.appendDesTF.stringValue = @"";
@@ -92,10 +92,10 @@
     if( validateString(deviceName) && validateString(build) && validateString(version) && validateString(appendName) && validateString(self.filePath)){
         NSString* sourcePath = nil;
         if( [deviceName isEqualToString:@"iPad"] ){
-            deviceName = @"Jdipad";
+            deviceName = @"xxipad";
             sourcePath = getFilePath(@"SourceSymbol/self");
         }else{
-            deviceName = @"JD4iPhone";
+            deviceName = @"xxxiPhone";
             sourcePath = getFilePath(@"SourceSymbol/self");
         }
         NSString* fileName = [NSString stringWithFormat:@"%@_%@_%@_%@",deviceName,version,build,appendName];

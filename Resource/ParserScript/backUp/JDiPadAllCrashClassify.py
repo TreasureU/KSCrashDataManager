@@ -6,7 +6,7 @@
 
 """
 说明区:
-	请使用命令: python JDiPadAllCrashClassify.py <iPad/iPhone> <fileDir>
+	请使用命令: python xxipadAllCrashClassify.py <iPad/iPhone> <fileDir>
 	脚本将自动解析指定目录下的 *.json 文件,请将 KCrash解析后的数据放置在里面.
 	脚本执行所在目录默认为脚本所在目录,注意文件夹位置关系。
 	如果需要调试代码,直接使用 cmd+R 运行,需要将 target_debug_flag 置为 True
@@ -70,7 +70,7 @@ if not target_debug_flag:
             target_crash_keyword_mapping_fileName = global_crash_keyword_mapping_iPadfileName
         target_input_filedir = sys.argv[2]
     else:
-        print "Error: need origin fileDir Param. Please use : python JDiPadCrashParser.py <fileDir>"
+        print "Error: need origin fileDir Param. Please use : python xxipadCrashParser.py <fileDir>"
         sys.exit(-1)
 else:
     target_crash_keyword_mapping_fileName = global_crash_keyword_mapping_iPadfileName

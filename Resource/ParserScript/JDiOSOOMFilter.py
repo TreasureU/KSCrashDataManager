@@ -57,7 +57,7 @@ if not target_debug_flag:
             target_app_run_name = global_appName_ipad
         target_input_filedir = sys.argv[2]
     else:
-        print "Error: need origin fileDir Param. Please use : python JDiPadCrashParser.py <iPad/iPhone> <fileDir>"
+        print "Error: need origin fileDir Param. Please use : python xxipadCrashParser.py <iPad/iPhone> <fileDir>"
         sys.exit(-1)
 else:
     target_app_run_name = global_appName_ipad

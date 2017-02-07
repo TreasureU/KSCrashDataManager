@@ -61,8 +61,8 @@ target_dsym_fileName = None
 
 # app运行名,外部赋值,内部值最终是下面两者之一
 target_app_run_name = None
-global_appName_ipad = "Jdipad"
-global_appName_iphone = "JD4iPhone"
+global_appName_ipad = "xxipad"
+global_appName_iphone = "xxxiPhone"
 
 # 合法的灰度版本号,仅iPhone支持,外部赋值
 target_grayScale_flag = "Gray_560_PP2"
@@ -688,19 +688,19 @@ if not target_debug_flag:
         print "Error: need origin fileDir Param. Please use : python iOSCrashParser.py <iPad/iPhone> <fileDir>"
         sys.exit(-1)
 else:
-    target_app_run_name = "Jdipad"
+    target_app_run_name = "xxipad"
     target_iPad_build_short_version = "3.9.0"
     target_iPad_build_version = "8050"
     target_input_filedir = "../testtest/iPad_390_1125"
-    target_dsym_fileName = "Jdipad"
+    target_dsym_fileName = "xxipad"
     target_grayScale_flag = ""
     target_need_cache = True
 
-    target_app_run_name = "JD4iPhone"
+    target_app_run_name = "xxxiPhone"
     target_iPad_build_short_version = "3.9.0"
     target_iPad_build_version = "8050"
     target_input_filedir = "../testtest/iPad_390_1125"
-    target_dsym_fileName = "Jdipad"
+    target_dsym_fileName = "xxipad"
     target_grayScale_flag = ""
     target_need_cache = True
 

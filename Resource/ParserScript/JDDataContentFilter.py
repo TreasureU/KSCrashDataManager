@@ -23,7 +23,7 @@ if not target_debug_flag:
     if len(sys.argv) >= 2:
         target_input_dir = sys.argv[1]
     else:
-        print "Error: need origin fileDir Param. Please use : python JDiPadCrashParser.py <iPad/iPhone> <fileDir>"
+        print "Error: need origin fileDir Param. Please use : python xxipadCrashParser.py <iPad/iPhone> <fileDir>"
         sys.exit(-1)
 else:
     target_input_dir = "../iPhone_550_PP3"
